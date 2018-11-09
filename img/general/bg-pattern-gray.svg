@@ -1,0 +1,15 @@
+<svg width="292" height="292" viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="#a" fill="#f9f9f9"/>
+    <use xlink:href="#b" transform="rotate(-111.872 191.001 70.75)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-74.459 176.97 39.915)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-107.049 61.68 55.607)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-72.43 132.245 -133.925)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-97.4 188.546 -18.928)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-111.84 50.826 -4.918)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-79.886 118.445 -28.802)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <use xlink:href="#b" transform="rotate(-111.655 104.703 124.853)" fill="#e0e0e0" style="mix-blend-mode:darken"/>
+    <defs>
+        <path id="a" d="M0 0h292v292H0V0z"/>
+        <path id="b" d="M0 0h9v18H0V0z"/>
+    </defs>
+</svg>
