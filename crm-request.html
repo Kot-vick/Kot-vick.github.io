@@ -460,46 +460,55 @@
           <!-- begin top-line -->
           <div class="top-line">
             <div class="top-line__sorting">
-              <div class="top-line__date">
-                <div class="bb-date">
-                  <input class="bb-date__input js-date" type="text" placeholder="дд.мм.гг">
-                  <i class="fal fa-calendar-alt bb-input__icon js-input-icon"></i>
+              <div class="top-line__inner">
+                <div class="top-line__date">
+                  <div class="bb-date">
+                    <input class="bb-date__input js-date" type="text" placeholder="дд.мм.гг">
+                    <i class="fal fa-calendar-alt bb-input__icon js-input-icon"></i>
+                  </div>
+                </div>
+                <div class="top-line__date">
+                  <div class="bb-date">
+                    <input class="bb-date__input js-date" type="text" placeholder="дд.мм.гг">
+                    <i class="fal fa-calendar-alt bb-input__icon js-input-icon"></i>
+                  </div>
                 </div>
               </div>
-              <div class="top-line__date">
-                <div class="bb-date">
-                  <input class="bb-date__input js-date" type="text" placeholder="дд.мм.гг">
-                  <i class="fal fa-calendar-alt bb-input__icon js-input-icon"></i>
+              <div class="control-box js-control-box">
+                <div class="top-line__select">
+                  <div class="bb-input bb-input--select">
+                    <select class="js-select-native" data-placeholder="поиск по мастеру">
+                      <option></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                    <span class="bb-input__error">*Введите время</span>
+                  </div>
+                </div>
+                <div class="top-line__select">
+                  <div class="bb-input bb-input--select">
+                    <select class="js-select-native" data-placeholder="поиск по администратору">
+                      <option></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                    <span class="bb-input__error">*Введите время</span>
+                  </div>
                 </div>
               </div>
-              <div class="top-line__select sm-hide">
-                <div class="bb-input bb-input--select">
-                  <select class="js-select no-search" data-placeholder="поиск по мастеру">
-                    <option></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                  </select>
-                  <span class="bb-input__error">*Введите время</span>
-                </div>
-              </div>
-              <div class="top-line__select sm-hide">
-                <div class="bb-input bb-input--select">
-                  <select class="js-select no-search" data-placeholder="поиск по администратору">
-                    <option></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                  </select>
-                  <span class="bb-input__error">*Введите время</span>
-                </div>
-              </div>
+              <button class="btn-icon top-line__btn_controls js-control-box-btn">
+                <svg class="icon icon-controls ">
+                  <use xlink:href="img/sprite.svg#controls"></use>
+                </svg>
+              </button>
             </div>
           </div>
           <!-- end top-line -->
@@ -530,7 +539,7 @@
               </div>
               <div class="widget__body js-sortable">
                 <!-- begin request-item -->
-                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -553,7 +562,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--notfilled sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -576,7 +585,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -599,7 +608,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -622,7 +631,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -645,7 +654,30 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
+                  <a class="request-item__link" href="#">
+                    <div class="request-item__inner">
+                      <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
+                      <span class="request-item__phone">+7 (927) 107-11-39</span>
+                      <span class="request-item__service">Аппаратный педикюр</span>
+                      <span class="request-item__master">мастер Ангелина Левина</span>
+                    </div>
+                    <span class="request-item__price">1200
+                      <i class="far fa-ruble-sign"></i>
+                    </span>
+                    <span class="request-item__date">
+                      <span>15 авг
+                        <span>2018</span>
+                      </span>
+                      <i>,</i>
+                      <span>12:00</span>
+                    </span>
+                    <i class="fal fa-smile request-item__icon"></i>
+                  </a>
+                </div>
+                <!-- end request-item -->
+                <!-- begin request-item -->
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -685,7 +717,7 @@
               </div>
               <div class="widget__body js-sortable">
                 <!-- begin request-item -->
-                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -708,7 +740,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--notfilled sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -731,7 +763,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -754,7 +786,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -777,7 +809,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -800,7 +832,30 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
+                  <a class="request-item__link" href="#">
+                    <div class="request-item__inner">
+                      <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
+                      <span class="request-item__phone">+7 (927) 107-11-39</span>
+                      <span class="request-item__service">Аппаратный педикюр</span>
+                      <span class="request-item__master">мастер Ангелина Левина</span>
+                    </div>
+                    <span class="request-item__price">1200
+                      <i class="far fa-ruble-sign"></i>
+                    </span>
+                    <span class="request-item__date">
+                      <span>15 авг
+                        <span>2018</span>
+                      </span>
+                      <i>,</i>
+                      <span>12:00</span>
+                    </span>
+                    <i class="fal fa-clock request-item__icon"></i>
+                  </a>
+                </div>
+                <!-- end request-item -->
+                <!-- begin request-item -->
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -840,7 +895,7 @@
               </div>
               <div class="widget__body js-sortable">
                 <!-- begin request-item -->
-                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -863,7 +918,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--notfilled sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -886,7 +941,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -909,7 +964,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -932,7 +987,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -955,7 +1010,30 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
+                  <a class="request-item__link" href="#">
+                    <div class="request-item__inner">
+                      <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
+                      <span class="request-item__phone">+7 (927) 107-11-39</span>
+                      <span class="request-item__service">Аппаратный педикюр</span>
+                      <span class="request-item__master">мастер Ангелина Левина</span>
+                    </div>
+                    <span class="request-item__price">1200
+                      <i class="far fa-ruble-sign"></i>
+                    </span>
+                    <span class="request-item__date">
+                      <span>15 авг
+                        <span>2018</span>
+                      </span>
+                      <i>,</i>
+                      <span>12:00</span>
+                    </span>
+                    <i class="fal fa-check-circle request-item__icon"></i>
+                  </a>
+                </div>
+                <!-- end request-item -->
+                <!-- begin request-item -->
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -995,7 +1073,7 @@
               </div>
               <div class="widget__body js-sortable">
                 <!-- begin request-item -->
-                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--new sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1018,7 +1096,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item request-item--notfilled sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1041,7 +1119,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1064,7 +1142,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1087,7 +1165,7 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1110,7 +1188,30 @@
                 </div>
                 <!-- end request-item -->
                 <!-- begin request-item -->
-                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request">
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
+                  <a class="request-item__link" href="#">
+                    <div class="request-item__inner">
+                      <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
+                      <span class="request-item__phone">+7 (927) 107-11-39</span>
+                      <span class="request-item__service">Аппаратный педикюр</span>
+                      <span class="request-item__master">мастер Ангелина Левина</span>
+                    </div>
+                    <span class="request-item__price">1200
+                      <i class="far fa-ruble-sign"></i>
+                    </span>
+                    <span class="request-item__date">
+                      <span>15 авг
+                        <span>2018</span>
+                      </span>
+                      <i>,</i>
+                      <span>12:00</span>
+                    </span>
+                    <i class="fal fa-frown request-item__icon"></i>
+                  </a>
+                </div>
+                <!-- end request-item -->
+                <!-- begin request-item -->
+                <div class="request-item sortable-item js-move-block--show" data-move-block-target="request-desktop-edit">
                   <a class="request-item__link" href="#">
                     <div class="request-item__inner">
                       <h5 class="request-item__title">Анна Оченьдлиннаяфамилия</h5>
@@ -1146,7 +1247,7 @@
           </div>
           <!-- end request__tab -->
           <div class="btn-floating js-btn-floating btn-fixed" data-position="bottom right">
-            <a class="btn-floating__link btn-icon btn-icon--large bg--default js-move-block--show md-only" data-btn-tooltip="Навая заявка" data-move-block-target="request" href="crm-aplication.html">
+            <a class="btn-floating__link btn-icon btn-icon--large bg--default js-move-block--show md-only" data-btn-tooltip="Навая заявка" data-move-block-target="request" href="javascript:void(0);">
               <svg class="icon icon-plus--bold btn-floating__icon icon--first">
                 <use xlink:href="img/sprite.svg#plus--bold"></use>
               </svg>
@@ -1185,13 +1286,29 @@
           <div class="aplication__left bg-light">
             <!-- begin aplication__inner -->
             <div class="aplication__inner">
-              <!-- begin aplication__date -->
-              <div class="bb-date bb-date--flex bb-date--expanded aplication__date">
-                <input class="bb-date__input js-date" data-date-format="DD, dd MM yyyy" data-position="bottom center" type="text" data-type="expanded">
-                <div class="js-date-field bb-date__field"></div>
-                <i class="fal fa-angle-down bb-date__icon--arrow js-input-icon"></i>
+              <div class="aplication__info-line">
+                <!-- begin aplication__date -->
+                <div class="bb-date bb-date--flex bb-date--expanded aplication__date">
+                  <input class="bb-date__input js-date" data-date-format="DD, dd MM yyyy" data-position="bottom center" type="text" data-type="expanded">
+                  <div class="js-date-field bb-date__field"></div>
+                  <i class="fal fa-angle-down bb-date__icon--arrow js-input-icon"></i>
+                </div>
+                <!-- end aplication__date -->
+                <div class="bb-input bb-input--select select-color">
+                  <select class="js-select--color">
+                    <option value="Все студии">Выберите салон</option>
+                    <option data-color="#ab00b6" value="ТЦ Проспект">"Березка" ТЦ Проспект</option>
+                    <option data-color="#0096fb" value="ТЦ Оранж">"Березка" ТЦ Оранж</option>
+                  </select>
+                  <!-- begin tip -->
+                  <div class="bb-input-tip js-bb-input-tip no-close">
+                    <span class="bb-input-tip__arrow-up"></span>
+                    <i class="fal fa-times"></i>
+                    <p class="bb-input-tip__text">Выберите салон</p>
+                  </div>
+                  <!-- end tip -->
+                </div>
               </div>
-              <!-- end aplication__date -->
               <!-- begin aplication-item__wrap -->
               <div class="aplication-item__wrap">
                 <!-- begin aplication-item -->
@@ -2100,8 +2217,284 @@
                     <button class="btn__action--sub" data-toggle="modal" data-target="#dell">Удалить</button>
                   </div>
                 </div>
-                <button class="btn btn-animate is-ready btn-gray is-success w100" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+                <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
                   <span class="btn__title">Сохранить заявку</span>
+                  <span class="btn__error">*Какая-то ошибочка</span>
+                </button>
+              </div>
+            </div>
+            <!-- end aplication__btns -->
+          </div>
+          <!-- end aplication__right -->
+        </div>
+        <!-- end aplication__wrap -->
+      </div>
+      <!-- end aplication__wrap -->
+    </div>
+    <div class="move-block js-move-block" data-move-block="request-desktop-edit">
+      <!-- begin aplication__wrap -->
+      <div class="aplication">
+        <!-- begin aplication__header -->
+        <div class="aplication__header">
+          <h2 class="aplication__title">Детали заявки</h2>
+          <button class="btn-icon aplication__close">
+            <svg class="icon icon-close js-move-block--close">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- end aplication__header -->
+        <!-- begin aplication__wrap -->
+        <div class="aplication__wrap">
+          <!-- begin aplication__left -->
+          <div class="aplication__left bg-light">
+            <!-- begin aplication__inner -->
+            <div class="aplication__inner">
+              <div class="aplication__info-line">
+                <div class="aplication__date">Четверг, 08 Ноябрь 2018</div>
+              </div>
+              <div class="aplication-info-table">
+                <ul class="aplication-info-table__list">
+                  <li class="aplication-info-table__item aplication-info-table-item"></li>
+                </ul>
+              </div>
+            </div>
+            <!-- end aplication__inner -->
+            <div class="overlay overlay--absolute js-search-overlay">
+              <div class="overlay__btn js-overlay--close">
+                <div class="overlay__icon">
+                  <svg class="icon icon-close ">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                  <span>esc</span>
+                </div>
+                <div class="overlay__text">Нажмите esc чтобы закрыть</div>
+              </div>
+            </div>
+          </div>
+          <!-- end aplication__left -->
+          <!-- begin aplication__right -->
+          <div class="aplication__right">
+            <!-- begin search-client -->
+            <div class="aplication__in search-client" style="display: none;">
+              <div class="search-client__form">
+                <form class="search">
+                  <input class="search__input js-search-overlay-input" type="text" placeholder="Введите имя или телефон клиента" autocomplete="off">
+                  <i class="fal fa-search bb-input__icon"></i>
+                </form>
+              </div>
+              <button class="btn btn-link js-move-block--show aplication__btn--link" data-move-block-target="new-client" style="display: none;">+ Новый клиент</button>
+              <div class="aplication__in">
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin user -->
+                <div class="user user--small aplication__user">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                      <span class="user__phone">+7 (927) 107-11-39</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end user -->
+                <!-- begin empty -->
+                <div class="empty aplication__empty">
+                  <svg class="icon icon-search-file empty__icon mb-15">
+                    <use xlink:href="img/sprite.svg#search-file"></use>
+                  </svg>
+                  <p class="empty__text">Используйте поиск, чтобы найти имеющегося клиента, или добавьте нового.</p>
+                </div>
+                <!-- end empty -->
+              </div>
+            </div>
+            <!-- end search-client -->
+            <!-- begin aplication__user -->
+            <div class="aplication__in aplication-success">
+              <!-- begin user -->
+              <div class="user user--small aplication-success__user" onclick="Crm.aplication.searchOverlay.show();">
+                <div class="user__inner">
+                  <div class="user__img">
+                    <img src="img/examples/user/lima-avatar.jpg" alt="user"> </div>
+                  <div class="user__text">
+                    <span class="user__name">Алена Оченьдлиннаяфамилия</span>
+                    <span class="user__phone">+7 (927) 107-11-39</span>
+                  </div>
+                  <i class="fal fa-angle-right user__arrow"></i>
+                  <div class="info-block info-block--more bb-dropdown bb-dropdown--hover bb-dropdown--small js-bb-dropdown user__info-block is-hidden" data-dropdown-position="right">
+                    <div class="bb-dropdown__list">
+                      <ul class="info-block__list">
+                        <li class="info-block__item">
+                          <span class="info-block__link js-move-block--show" data-move-block-target="new-client"> Редактировать </span>
+                        </li>
+                        <li class="info-block__item">
+                          <span class="info-block__link text-color--red"> Сменить клиента </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end user -->
+              <div class="bb-input bb-input--select aplication-success__status">
+                <select class="js-select--icon">
+                  <option data-icon="fal fa-smile text-color--blue">Новая заявка</option>
+                  <option data-icon="fal fa-clock text-color--yellow">В работе</option>
+                  <option data-icon="fal fa-check-circle text-color--green">Выполнена</option>
+                  <option data-icon="fal fa-frown text-color--red">Отменена</option>
+                </select>
+              </div>
+            </div>
+            <!-- aplication__user -->
+            <!-- begin aplication__btns -->
+            <div class="aplication__btns">
+              <div class="button-box">
+                <button class="btn btn-outline-muted w100">Редактировать</button>
+                <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
+                  <span class="btn__title">Закрыть</span>
                   <span class="btn__error">*Какая-то ошибочка</span>
                 </button>
               </div>
@@ -2309,7 +2702,7 @@
             <div class="button-box">
               <button class="btn btn-error first w50">Удалить</button>
               <button class="btn btn-outline-muted w50">Отменить</button>
-              <button class="btn btn-animate is-ready btn-gray w50 is-success" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+              <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
                 <span class="btn__title">Сохранить</span>
                 <span class="btn__error">*Какая-то ошибочка</span>
               </button>
@@ -2321,11 +2714,11 @@
       </div>
       <!-- end aplication -->
     </div>
-    <div class="move-block move-block--mobile js-move-block" data-move-block="request">
+    <div class="move-block move-block--mobile js-move-block is-invaid" data-move-block="request">
       <div class="move-block__header">
         <!-- <div class="move-block__title">Заявка</div> -->
         <div class="bb-input bb-input--select">
-          <select class="js-select--icon no-search">
+          <select class="js-select--icon">
             <option data-icon="fal fa-smile text-color--blue">Новая заявка</option>
             <option data-icon="fal fa-clock text-color--yellow">В работе</option>
             <option data-icon="fal fa-check-circle text-color--green">Выполнена</option>
@@ -2339,7 +2732,7 @@
       <!-- begin move-block__body-->
       <div class="move-block__body">
         <!-- begin move-block__item -->
-        <div class="move-block__item move-block-item">
+        <div class="move-block__item move-block-item is-error">
           <div class="move-block-item__client move-block__item--btn js-move-block--show" data-move-block-target="search-client">
             <svg class="icon icon-search-people move-block__icon">
               <use xlink:href="img/sprite.svg#search-people"></use>
@@ -2370,7 +2763,7 @@
         </div>
         <!-- end date -->
         <!-- begin service -->
-        <div class="move-block__item move-block-item">
+        <div class="move-block__item move-block-item is-error">
           <div class="move-block-service">
             <div class="move-block-service__info">
               <span class="move-block-service__time">13:00</span>
@@ -2408,15 +2801,16 @@
           <i class="far fa-ruble-sign"></i>
         </span>
         <div class="button-box">
-          <button class="btn btn-animate is-ready btn-gray w100 is-success" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+          <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
             <span class="btn__title">Сохранить</span>
             <span class="btn__error">*Какая-то ошибочка</span>
           </button>
         </div>
+        <div class="validate-message validate-message--error move-block__validate">Заявка не заполненна</div>
       </div>
       <!-- end move-block__footer -->
       <!-- begin search-client -->
-      <div class="move-block__box search-client" data-move-block="search-client">
+      <div class="move-block__box search-client" data-move-block="search-client" style="display: none;">
         <div class="move-block__header">
           <div class="move-block__title">Поиск клиента</div>
           <svg class="icon icon-close move-block__close js-move-block-box--close">
@@ -2652,7 +3046,7 @@
           </div>
         </div>
         <div class="move-block__footer">
-          <button class="btn btn-animate is-ready btn-gray w100 is-success new-client__btn" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+          <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
             <span class="btn__title">Сохранить</span>
             <span class="btn__error">*Какая-то ошибочка</span>
           </button>
@@ -3151,7 +3545,7 @@
           <!-- end aplication-success__tab -->
         </div>
         <div class="move-block__footer">
-          <button class="btn btn-animate is-ready btn-gray w100 is-success new-client__btn" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+          <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
             <span class="btn__title">Сохранить</span>
             <span class="btn__error">*Какая-то ошибочка</span>
           </button>
@@ -3174,7 +3568,7 @@
           </div>
         </div>
         <div class="move-block__footer">
-          <button class="btn btn-animate is-ready btn-gray w100 is-success new-client__btn" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+          <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
             <span class="btn__title">Сохранить</span>
             <span class="btn__error">*Какая-то ошибочка</span>
           </button>
@@ -3530,7 +3924,7 @@
                       </ul>
                     </div>
                     <div class="move-select__footer">
-                      <button class="btn btn-default">Продолжить</button>
+                      <button class="btn btn-gray">Продолжить</button>
                     </div>
                   </div>
                   <!-- end move-select -->
@@ -3631,7 +4025,7 @@
                       </ul>
                     </div>
                     <div class="move-select__footer">
-                      <button class="btn btn-default">Продолжить</button>
+                      <button class="btn btn-gray">Продолжить</button>
                     </div>
                   </div>
                   <!-- end move-select -->
@@ -3675,7 +4069,7 @@
           <!-- end aplication-item -->
         </div>
         <div class="move-block__footer">
-          <button class="btn btn-animate is-ready btn-gray w100 is-success new-client__btn" data-message-error="Ошибка" data-message-success="Заявка сохранена">
+          <button class="btn btn-gray btn-animate is-ready" data-push data-push-message-success="Хорошего дня!" data-push-message-error="Неправильный пароль или e-mail" data-push-status="error" data-push-delay="2500">
             <span class="btn__title">Сохранить</span>
             <span class="btn__error">*Какая-то ошибочка</span>
           </button>
@@ -4297,8 +4691,8 @@
                 <input type="text" class="js-date-inline" style="display: none;">
                 <div class="list list--inline list--dot align-center mt-10">
                   <li class="list__item">
-                    <i class="list__dot" style="background-color: #e0e0e0;"></i>
-                    <span class="list__text">Сохраненные даты</span>
+                    <i class="list__dot" style="background-color: #d0e4fa;"></i>
+                    <span class="list__text">Рабочие дни</span>
                   </li>
                   <li class="list__item">
                     <i class="list__dot" style="background-color: #ff8272;"></i>

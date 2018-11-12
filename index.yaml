@@ -145,6 +145,10 @@ PageList:
   ready: 50
   desc : Одностраничник регистрация
 
+- file: onepage-icon.html
+  ready: 50
+  desc : Одностраничник иконки
+
   #Промо страница  стать   мастером  или студией
 - file: promo.html
   ready: 50
