@@ -145,27 +145,17 @@ PageList:
   ready: 50
   desc : Одностраничник регистрация
 
-- file: onepage-icon.html
+- file: onepage-course.html
   ready: 50
-  desc : Одностраничник иконки
+  desc : Одностраничник курсы
 
-  #Промо страница  стать   мастером  или студией
-- file: promo.html
+- file: onepage-registration-user.html
   ready: 50
-  desc : Стать мастером или студией
-
-  #Промо страница  стать   мастером  или студией
-- file: promo2.html
-  ready: 50
-  desc : Стать мастером или студией
+  desc : Регистрация пользователей лендинг
 
 - file: promo-page-callin.html
   ready: 50
   desc : Одностраничник для привлечения
-
-- file: promo-page-icon.html
-  ready: 50
-  desc : Одностраничник для иконок
 
   #404
 - file: 404.html
