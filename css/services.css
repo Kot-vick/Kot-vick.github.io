@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -39,12 +45,12 @@ body {
   margin-bottom: 30px;
   text-align: center;
   font-family: sans-serif;
-  font-size: 35px;
+  font-size: 51px;
   color: #fff;
 }
 
 .title span {
-  color: #E18577;
+  color: #ff8976;
 }
 
 .subtitle {
@@ -103,7 +109,7 @@ body {
   margin-left: 35px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .title {
     font-size: 44px;
     margin-bottom: 20px;
@@ -120,6 +126,7 @@ body {
 
 @media (orientation: landscape) {
   .title {
+    font-size: 40px;
     margin-bottom: 15px;
   }
   

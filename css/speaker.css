@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -97,7 +103,7 @@ body {
   margin: 3% 0;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .subtitle {
     margin-bottom: 10px;
   }
@@ -151,7 +157,7 @@ body {
 
   .title {
     width: 50%;
-    padding-left: 27%;
+    margin-left: 27%;
   }
 
   .speaker {
@@ -214,8 +220,9 @@ body {
 
   .title {
     width: 90%;
-    padding-left: 0;
-    font-size: 35px;
+    margin-left: 0;
+    margin-bottom: 66px;
+    font-size: 42px;
   }
 
   .inner {
