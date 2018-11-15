@@ -99,11 +99,11 @@ body {
 
 @media (min-width: 320px) {
   .subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .img {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
