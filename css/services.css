@@ -103,6 +103,21 @@ body {
   margin-left: 35px;
 }
 
+@media (min-width: 320px) {
+  .title {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    width: 30px;
+  }
+}
+
 @media (orientation: landscape) {
   .title {
     margin-bottom: 15px;
