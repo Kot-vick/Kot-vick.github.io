@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Beautybox</title>
+    <title>Детали заявки</title>
     <meta name="keywords" content>
     <meta name="description" content>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -27,7 +27,7 @@
     <link href="img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
     <link rel="stylesheet" media="all" href="css/app.css"> </head>
   <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-    <div class="wrapper page-home">
+    <div class="wrapper ">
       <!-- begin mobile-nav -->
       <nav class="mobile-nav js-mobile-nav sm-only">
         <div class="mobile-nav__header" style="background-image: url('img/general/mobile-nav-bg.jpg');">
@@ -207,26 +207,102 @@
       <!-- end mobile-search -->
       <div class="wrapper__inner">
         <!-- begin header -->
-        <header class="header " itemscope itemtype="http://schema.org/WPHeader">
+        <header class="header bg--dark is-fixed" itemscope itemtype="http://schema.org/WPHeader">
           <!-- begin header__top -->
           <div class="header__top">
             <div class="container">
+              <!-- begin header__inner -->
               <div class="header__inner">
                 <a href="#" class="js-main-nav-btn toggle-mnu">
                   <span></span>
                 </a>
+                <!-- begin logo -->
                 <div class="logo">
-                  <a href="home.html" class="logo__link">
-                    <img src="img/general/logo.svg" alt="beauty box" class="logo__img"> </a>
+                  <a href="home.html" class="logo__link">beauty
+                    <span>box</span>
+                  </a>
                 </div>
+                <!-- end logo -->
+                <!-- begin header__change-city -->
+                <div class="header__city-select">
+                  <!-- begin city-select -->
+                  <div class="city-select js-city-select bb-dropdown js-bb-dropdown">
+                    <div class="city-select__title">
+                      <span>Саратов</span>
+                      <i class="fal fa-map-marker-alt city-select__icon"></i>
+                    </div>
+                    <ul class="city-select__list bb-dropdown__list">
+                      <div class="city-select__search">
+                        <input type="search" placeholder="Введите название города" autocomplete="off"> </div>
+                      <li class="city-select__item">Москва</li>
+                      <li class="city-select__item">Санкт-Петербург</li>
+                      <li class="city-select__item">Саратов</li>
+                      <li class="city-select__item">Балаково</li>
+                      <li class="city-select__item">Самара</li>
+                    </ul>
+                  </div>
+                  <!-- end city-select -->
+                </div>
+                <!-- end header__change-city -->
+                <!-- begin header__search -->
+                <div class="header__search">
+                  <!-- begin search -->
+                  <div class="search search--sm search--dark js-search js-input-box">
+                    <input type="text" class="search__input js-search-input" placeholder="Название услуги или салона" autocomplete="off">
+                    <!-- <div class="bb-input">
+		<input class="search__input js-input js-search-input" type="text" placeholder="Название услуги или салона" autocomplete="off">
+		<i class="fal fa-search bb-input__icon"></i>
+		<i class="fal fa-times bb-input__icon js-input--clear" style="display: none;"></i>
+	</div> -->
+                    <i class="far fa-search search__ico"></i>
+                    <div class="search__hint search-hint" style="display: none;">
+                      <ul class="search-hint__list">
+                        <li class="search-hint__item">
+                          <a href="#" class="search-hint__link">
+                            <span class="search-hint__bade search-hint__bade--category">категория</span>
+                            <span class="search-hint__text">
+                              <strong>Маникюр</strong>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="search-hint__item">
+                          <a href="#" class="search-hint__link">
+                            <span class="search-hint__bade search-hint__bade--service">услуга</span>
+                            <span class="search-hint__text">Классический
+                              <strong>маникюр</strong>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="search-hint__item">
+                          <a href="#" class="search-hint__link">
+                            <span class="search-hint__bade search-hint__bade--salon">салон</span>
+                            <span class="search-hint__text">Салон
+                              <strong>маникюра</strong>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="search-hint__item">
+                          <a href="#" class="search-hint__link">
+                            <span class="search-hint__bade search-hint__bade--master">мастер</span>
+                            <span class="search-hint__text">Эвелина Николаевна</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- end search -->
+                </div>
+                <!-- end header__search -->
                 <!-- begin header-action -->
                 <div class="header-action">
-                  <div class="header-action__out">
-                    <a href="#auth-form" class="header-action__login button-link" data-fancybox>Войти или зарегистрироваться</a>
+                  <div class="header-action__out" style="display: none;">
+                    <a href="#auth-form" class="header-action__login button-link" data-fancybox>Войти</a>
                   </div>
-                  <div class="header-action__inner is-hidden">
-                    <!-- <a href="#" class="header-action__fav button-icon button-icon--fav is-checked" title="Избранное"></a> -->
-                    <div class="header-action__search button-icon button-icon--search js-mobile-search-btn"></div>
+                  <div class="header-action__inner">
+                    <!-- <a href="#" class="header-action__fav button-icon button-icon--fav js-btn-fav is-checked" title="Избранное"></a>	 -->
+                    <div class="header-action__search btn-icon js-mobile-search-btn">
+                      <i class="far fa-search"></i>
+                    </div>
                     <!-- begin  header-action__request-info -->
                     <div class="header-action__request-info">
                       <!-- begin request-info -->
@@ -362,7 +438,7 @@
                     </div>
                     <!-- end  header-action__request-info -->
                     <!-- begin header-user -->
-                    <div class="header-user bb-dropdown bb-dropdown--hover">
+                    <div class="header-user bb-dropdown bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
                       <span class="header-user__name">Adriana</span>
                       <div class="header-user__img">
                         <img src="img/examples/user/lima-avatar-1.jpg" alt="avatar"> </div>
@@ -386,8 +462,8 @@
                           <li>
                             <a href="#">Настройки</a>
                           </li>
-                          <li>
-                            <a href="#">Pro-аккаунт</a>
+                          <li class="js-user-link" data-clipboard-action="copy" data-clipboard-text="https://beautybox.ru/user_01001110100">
+                            <a href="javascript:void(0);">Поделиться ссылкой</a>
                           </li>
                         </ul>
                       </div>
@@ -397,6 +473,7 @@
                 </div>
                 <!-- end header-action -->
               </div>
+              <!-- end header__inner -->
             </div>
           </div>
           <!-- end header__top -->
@@ -568,391 +645,166 @@
           <!-- end header__bottom -->
         </header>
         <!-- end header -->
-        <!-- begin home -->
-        <main class="main home">
-          <!-- begin firstscreen -->
-          <section class="bb-section firstscreen">
-            <div class="firstscreen__inner">
-              <!-- begin firstscreen__left -->
-              <div class="firstscreen__left" style="background-image: url(img/general/firstscreen.jpg);">
-                <h1 class="h1 firstscreen__title" itemprop="headline">Найди своего мастера</h1>
-                <p class="firstscreen__subtitle">Мастера маникюра ждут тебя в 550 городах России и СНГ</p>
-                <!-- begin search -->
-                <div class="search__wrap">
-                  <div class="firstscreen__search">
-                    <!-- begin search -->
-                    <form class="search js-search">
-                      <div class="search__group search__group--city js-input-box">
-                        <div class="bb-input">
-                          <input class="search__input js-input js-search-input" type="text" placeholder="Название города" autocomplete="off">
-                          <i class="fal fa-search bb-input__icon"></i>
-                          <i class="fal fa-times bb-input__icon js-input--clear" style="display: none;"></i>
-                        </div>
-                        <div class="search__hint search-hint search-hint--cyties" style="display: none;">
-                          <ul class="search-hint__list">
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--location">
-                                  <i class="fal fa-map-marker-alt"></i>
-                                </span>
-                                <span class="search-hint__text">
-                                  <strong>New</strong> Yourk</span>
-                              </a>
-                            </li>
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--location">
-                                  <i class="fal fa-map-marker-alt"></i>
-                                </span>
-                                <span class="search-hint__text">
-                                  <strong>New</strong> Yourk</span>
-                              </a>
-                            </li>
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--location">
-                                  <i class="fal fa-map-marker-alt"></i>
-                                </span>
-                                <span class="search-hint__text">
-                                  <strong>New</strong> Yourk</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="search__group search__group--services js-input-box">
-                        <div class="bb-input">
-                          <input class="search__input js-input js-search-input" type="text" placeholder="Название услуги или салона" autocomplete="off">
-                          <i class="fal fa-search bb-input__icon"></i>
-                          <i class="fal fa-times bb-input__icon js-input--clear" style="display: none;"></i>
-                        </div>
-                        <div class="search-hint search__hint" style="display: none;">
-                          <ul class="search-hint__list">
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--category">категория</span>
-                                <span class="search-hint__text">
-                                  <strong>Маникюр</strong>
-                                </span>
-                              </a>
-                            </li>
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--service">услуга</span>
-                                <span class="search-hint__text">Классический
-                                  <strong>маникюр</strong>
-                                </span>
-                              </a>
-                            </li>
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--salon">салон</span>
-                                <span class="search-hint__text">Салон
-                                  <strong>маникюра</strong>
-                                </span>
-                              </a>
-                            </li>
-                            <li class="search-hint__item">
-                              <a href="#" class="search-hint__link">
-                                <span class="search-hint__bade search-hint__bade--master">мастер</span>
-                                <span class="search-hint__text">Эвелина Николаевна</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <button class="search__btn button-animate js-btn-animate">
-                        <span>Найти</span>
-                        <span class="button-animate__hover"></span>
-                        <svg class="icon icon-search search__icon">
-                          <use xlink:href="img/sprite.svg#search"></use>
-                        </svg>
-                      </button>
-                    </form>
-                    <!-- end search -->
+        <!-- begin main order -->
+        <main class="main order">
+          <!-- begin order__inner -->
+          <div class="order__inner">
+            <!-- begin order__left -->
+            <div class="order__left">
+              <div class="order__left_top">
+                <!-- begin confirm-message -->
+                <div class="confirm-msg js-confirm-msg">
+                  <div class="confirm-msg__icon">
+                    <i class="fal fa-check"></i>
                   </div>
-                  <div class="search__popular">
-                    <ul class="popular-search">
-                      <li class="popular-search__item popular-search__item_title"> Популярные запросы: </li>
-                      <li class="popular-search__item">
-                        <a href="#" class="popular-search__link">Маникюр</a>
-                      </li>
-                      <li class="popular-search__item">
-                        <a href="#" class="popular-search__link">Педикюр</a>
-                      </li>
-                      <li class="popular-search__item">
-                        <a href="#" class="popular-search__link">Шлак</a>
-                      </li>
-                      <li class="popular-search__item">
-                        <a href="#" class="popular-search__link">Наращивание ногтей</a>
-                      </li>
-                    </ul>
+                  <div class="confirm-msg__inner">
+                    <div class="confirm-msg__title">Ваша заявка успешно отправлена!</div>
+                    <div class="confirm-msg__desc sm-hide">Вы записались на Среду, 13 ноября 2018 - 11:15</div>
                   </div>
                 </div>
-                <!-- end search -->
+                <!-- end confirm-message -->
               </div>
-              <!-- end firstscreen__left -->
-              <!-- begin firstscreen__right -->
-              <div class="firstscreen__right">
-                <!-- begin offer -->
-                <div class="offer">
-                  <span class="offer__title"> Вы мастер или студия красоты ? </span>
-                  <span class="offer__desc">Зарегистрируйте аккаунт прямо сейчас и начните принимать заявки</span>
-                  <button class="btn btn-accent offer__btn">Создать аккаунт</button>
-                </div>
-                <!-- end offer -->
-              </div>
-              <!-- end firstscreen__right -->
-            </div>
-          </section>
-          <!-- end firstscreen -->
-          <!-- begin bb-category -->
-          <section class="bb-section bb-category xs-only">
-            <div class="bb-category__items">
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/nails.png);">
-                <span class="bb-category__title">Ногти</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/hair.png);">
-                <span class="bb-category__title">Волосы</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/rs.png);">
-                <span class="bb-category__title">Ресницы</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/aesthetics.png);">
-                <span class="bb-category__title">Косметология</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/makeup.png);">
-                <span class="bb-category__title">Визаж</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/pill.png);">
-                <span class="bb-category__title">Эпиляция</span>
-              </a>
-              <a href="catalog.html" class="bb-category__item" style="background-image: url(img/general/category/massage.png);">
-                <span class="bb-category__title">Массаж</span>
-              </a>
-            </div>
-          </section>
-          <!-- end bb-category -->
-          <!-- begin bb-about -->
-          <section class="bb-section bb-about bb-section-gradient bb-section-gradient--gray">
-            <div class="container">
-              <div class="bb-about__inner">
-                <div class="bb-about__left">
-                  <div class="bb-about__logo">beauty box</div>
-                  <div class="bb-about__desc">удобный поиск мастеров в вашем городе</div>
-                  <p class="bb-about__text">Это надежный сервис, где посетитель сможет найти мастера маникюра в любом городе России. У нас вы сможете найти не только биржу заказов и каталог мастеров, но и разделы с фото и видео работами мастеров, отзывы, расценки на услуги мастеров,
-                    а также форум профессионалов своего дела, где вы модете задать интересующий вас вопрос. В данный момент в нашей базе, более 50 000 мастеров в 105 разделах.</p>
-                  <div class="bb-about__buttons">
-                    <button class="button-animate button-animate--black js-btn-animate js-go-top"> Найти мастера
-                      <span class="button-animate__hover"></span>
-                    </button>
-                    <a href="#auth-form" class="button-animate js-btn-animate" data-fancybox> Я мастер
-                      <span class="button-animate__hover"> </span>
-                    </a>
+              <!-- begin order-details -->
+              <div class="order-detail js-order-detail">
+                <div class="order-detail__title sm-hide">Детали заявки</div>
+                <div class="order-detail__item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-calendar-alt"></i>
+                    <div class="order-detail__desc">14 ноября 2018, Среда</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-map-marker-alt"></i>
+                    <div class="order-detail__desc">Ул. Факел Социализма, 24, ТЦ "Проспект"</div>
                   </div>
                 </div>
-                <div class="bb-about__right">
-                  <div class="item-info__wrap">
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-search">
-                            <use xlink:href="img/sprite.svg#search"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> Быстрый поиск </div>
-                        <div class="item-info__desc"> по многим параметрам </div>
-                      </div>
-                    </div>
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-people-group">
-                            <use xlink:href="img/sprite.svg#people-group"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> 100 000 мастеров </div>
-                        <div class="item-info__desc"> для вашей красоты </div>
-                      </div>
-                    </div>
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-city">
-                            <use xlink:href="img/sprite.svg#city"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> 74 города </div>
-                        <div class="item-info__desc"> в которых мы работаем </div>
-                      </div>
-                    </div>
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-filter">
-                            <use xlink:href="img/sprite.svg#filter"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> Фильтр </div>
-                        <div class="item-info__desc"> по стоимости, времени, району </div>
-                      </div>
-                    </div>
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-online">
-                            <use xlink:href="img/sprite.svg#online"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> Онлайн запись </div>
-                        <div class="item-info__desc"> на прием к мастеру </div>
-                      </div>
-                    </div>
-                    <div class="item-info">
-                      <div class="item-info__inner">
-                        <div class="item-info__icon">
-                          <svg class="icon icon-chat">
-                            <use xlink:href="img/sprite.svg#chat"></use>
-                          </svg>
-                        </div>
-                        <div class="item-info__title"> Отзывы </div>
-                        <div class="item-info__desc"> обо всех мастерах </div>
+                <div class="order-detail__item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Комбинированный маникюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">11.15-11.30 (1ч 30мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Елизавета Лукьянова</div>
+                  </div>
+                </div>
+                <div class="order-detail__item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Педикюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">11.30-12.00 (1ч 20мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Мамасита Мамаситовна</div>
+                  </div>
+                </div>
+                <div class="order-detail__item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Бразильский маникюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">12.00-12.30 (1ч 00мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Карина Рататуева</div>
+                  </div>
+                </div>
+                <div class="order-detail__item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Отцовский ремень</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">12.00-12.30 (1ч 00мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Карина Рататуева</div>
+                  </div>
+                </div>
+                <a class="order-detail__btn btn btn-default sm-hide" href="#">Вернуться к заявкам</a>
+              </div>
+              <!-- end order-detailails -->
+            </div>
+            <!-- end order__left -->
+            <!-- begin order__right -->
+            <div class="order__right">
+              <!-- begin user-cart -->
+              <div class="user-cart user-cart--confirmed">
+                <div class="user-cart__top align-center sm-hide">
+                  <div class="user-cart__title">Ваша заявка</div>
+                </div>
+                <div class="user-cart__item sm-hide">
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Комбинированный маникюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 30мин</div>
+                      <div class="user-cart__price">1200
+                        <i class="fal fa-ruble-sign"></i>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="user-cart__item sm-hide">
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Педикюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 20мин</div>
+                      <div class="user-cart__price">900
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__item sm-hide">
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Бразильский маникюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 00мин</div>
+                      <div class="user-cart__price">600
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__item sm-hide">
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Отцовский ремень</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 00мин</div>
+                      <div class="user-cart__price">600
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__bottom is-active">
+                  <div class="user-cart__item">
+                    <span class="user-cart__title">Итого:</span>
+                    <span class="user-cart__price user-cart__price--total">2700
+                      <i class="fal fa-ruble-sign"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
+              <!-- end user-cart -->
             </div>
-          </section>
-          <!-- end bb-about -->
-          <!-- begin invite -->
-          <section class="bb-section bb-invite" style="background-image: url('img/general/invite-hero--lk-2.jpg');">
-            <div class="container">
-              <h2 class="h2 bb-invite__title">Пригласите своего мастера в
-                <strong class="color-primary">beauty box</strong>
-              </h2>
-              <div class="bb-invite__subtitle">Получите бесплатную услугу в подарок</div>
-              <button class="button-animate js-btn-animate bb-invite__btn"> Пригласить
-                <span class="button-animate__hover"></span>
-              </button>
-            </div>
-          </section>
-          <!-- end invite -->
-          <!-- begin bb-blog -->
-          <section class="bb-section bb-blog">
-            <div class="container">
-              <div class="bb-title">
-                <h2 class="h2 bb-title__title">Статьи и блоги</h2>
-              </div>
-            </div>
-            <div class="blog-item__wrap">
-              <a href="#" class="blog-item" style="background-image: url(img/examples/1.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-              <a href="#" class="blog-item" style="background-image: url(img/examples/2.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-              <a href="#" class="blog-item" style="background-image: url(img/examples/3.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-              <a href="#" class="blog-item" style="background-image: url(img/examples/4.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-              <a href="#" class="blog-item" style="background-image: url(img/examples/5.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-              <a href="#" class="blog-item" style="background-image: url(img/examples/6.png);">
-                <h4 class="blog-item__title">Brighten Up Your Color
-                  <span>Stunning hues are in season</span>
-                </h4>
-                <button class="blog-item__btn button-animate button-animate--white js-btn-animate"> Подробнее
-                  <span class="button-animate__hover"></span>
-                </button>
-              </a>
-            </div>
-          </section>
-          <!-- end bb-blog -->
-          <!-- begin bb-blog -->
-          <section class="bb-section bb-blog bb-section-gradient is-hidden">
-            <div class="container">
-              <div class="bb-title">
-                <h2 class="h2 bb-title__title">Статьи и блоги</h2>
-              </div>
-              <div class="bb-blog__inner">
-                <a href="blog-post.html" class="post bb-blog__post">
-                  <div class="post__img">
-                    <div class="spacer"></div>
-                    <img src="img/blog/post/3.jpg" alt="alt"> </div>
-                  <div class="post__info">
-                    <span class="post__subtitle">Маникюр</span>
-                    <h4 class="post__title">
-                      <span>Свадебный маникюр в 2018 году</span>
-                    </h4>
-                  </div>
-                </a>
-                <a href="blog-post.html" class="post bb-blog__post">
-                  <div class="post__img">
-                    <div class="spacer"></div>
-                    <img src="img/blog/post/3.jpg" alt="alt"> </div>
-                  <div class="post__info">
-                    <span class="post__subtitle">Маникюр</span>
-                    <h4 class="post__title">
-                      <span>Свадебный маникюр в 2018 году</span>
-                    </h4>
-                  </div>
-                </a>
-                <a href="blog-post.html" class="post bb-blog__post">
-                  <div class="post__img">
-                    <div class="spacer"></div>
-                    <img src="img/blog/post/3.jpg" alt="alt"> </div>
-                  <div class="post__info">
-                    <span class="post__subtitle">Маникюр</span>
-                    <h4 class="post__title">
-                      <span>Свадебный маникюр в 2018 году</span>
-                    </h4>
-                  </div>
-                </a>
-                <a href="blog-post.html" class="post bb-blog__post">
-                  <div class="post__img">
-                    <div class="spacer"></div>
-                    <img src="img/blog/post/3.jpg" alt="alt"> </div>
-                  <div class="post__info">
-                    <span class="post__subtitle">Маникюр</span>
-                    <h4 class="post__title">
-                      <span>Свадебный маникюр в 2018 году</span>
-                    </h4>
-                  </div>
-                </a> ﻿ </div>
-            </div>
-          </section>
-          <!-- end bb-blog -->
+            <!-- end order__right -->
+          </div>
+          <!-- end order__inner -->
         </main>
-        <!-- end home -->
+        <!-- end main order -->
       </div>
     </div>
     <!-- begin preloader -->

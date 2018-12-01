@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Nailz X Collab | Подробная карточка</title>
+    <title>Создание заявки</title>
     <meta name="keywords" content>
     <meta name="description" content>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -27,7 +27,7 @@
     <link href="img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
     <link rel="stylesheet" media="all" href="css/app.css"> </head>
   <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-    <div class="wrapper page-order">
+    <div class="wrapper ">
       <!-- begin mobile-nav -->
       <nav class="mobile-nav js-mobile-nav sm-only">
         <div class="mobile-nav__header" style="background-image: url('img/general/mobile-nav-bg.jpg');">
@@ -209,294 +209,976 @@
         <!-- begin header -->
         <header class="header bg--dark" itemscope itemtype="http://schema.org/WPHeader">
           <div class="container">
-            <div class="header__inner">
-              <a href="#" class="js-main-nav-btn toggle-mnu">
-                <span></span>
-              </a>
-              <a href="#" class="button-link button-link--icon button-link--default">
-                <svg class="icon icon-arrow--left ">
-                  <use xlink:href="img/sprite.svg#arrow--left"></use>
-                </svg>
-                <span>Назад</span>
-              </a>
-              <!-- begin header__logo -->
-              <div class="logo header__logo">
-                <a href="home.html" class="logo__link">
-                  <img src="img/general/logo--white.svg" alt="beauty box" class="logo__img"> </a>
-              </div>
-              <!-- end header__logo -->
-              <!-- begin header-action -->
-              <div class="header-action">
-                <div class="header-action__out" style="display: none;">
-                  <a href="#auth-form" class="header-action__login button-link" data-fancybox>Войти</a>
-                </div>
-                <div class="header-action__inner">
-                  <!-- <a href="#" class="header-action__fav button-icon button-icon--fav js-btn-fav is-checked" title="Избранное"></a>	 -->
-                  <div class="header-action__search button-icon button-icon--search js-mobile-search-btn"></div>
-                  <!-- begin  header-action__request-info -->
-                  <div class="header-action__request-info">
-                    <!-- begin request-info -->
-                    <div class="request-info bb-dropdown js-bb-dropdown" data-dropdown-position="right">
-                      <i class="fas fa-bell request-info__icon" data-count="17"></i>
-                      <div class="bb-dropdown__list">
-                        <span class="request-info__header">Уведомления</span>
-                        <!-- begin request-info__items -->
-                        <div class="request-info__items">
-                          <div class="request-info__item">
-                            <div class="request-info__inner">
-                              <div class="request-info__avatar">
-                                <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
-                              <div class="request-info__desc">
-                                <div class="request-info__text">
-                                  <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
-                                  <strong>маникюр</strong> на
-                                  <strong>18:00</strong> услуга
-                                  <strong>SPA - маникюр</strong>
-                                  <span class="lk-request-info__time">сегодня в 9:38</span>
+            <!-- begin header__top -->
+            <div class="header__top sm-hide">
+              <div class="container">
+                <!-- begin header__inner -->
+                <div class="header__inner">
+                  <!-- begin logo -->
+                  <div class="logo">
+                    <a href="home.html" class="logo__link">beauty
+                      <span>box</span>
+                    </a>
+                  </div>
+                  <!-- end logo -->
+                  <!-- begin header-action -->
+                  <div class="header-action">
+                    <div class="header-action__out" style="display: none;">
+                      <a href="#auth-form" class="header-action__login button-link" data-fancybox>Войти</a>
+                    </div>
+                    <div class="header-action__inner">
+                      <!-- <a href="#" class="header-action__fav button-icon button-icon--fav js-btn-fav is-checked" title="Избранное"></a>	 -->
+                      <div class="header-action__search btn-icon js-mobile-search-btn">
+                        <i class="far fa-search"></i>
+                      </div>
+                      <!-- begin  header-action__request-info -->
+                      <div class="header-action__request-info">
+                        <!-- begin request-info -->
+                        <div class="request-info bb-dropdown js-bb-dropdown" data-dropdown-position="right">
+                          <i class="fas fa-bell request-info__icon" data-count="17"></i>
+                          <div class="bb-dropdown__list">
+                            <span class="request-info__header">Уведомления</span>
+                            <!-- begin request-info__items -->
+                            <div class="request-info__items">
+                              <div class="request-info__item">
+                                <div class="request-info__inner">
+                                  <div class="request-info__avatar">
+                                    <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
+                                  <div class="request-info__desc">
+                                    <div class="request-info__text">
+                                      <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
+                                      <strong>маникюр</strong> на
+                                      <strong>18:00</strong> услуга
+                                      <strong>SPA - маникюр</strong>
+                                      <span class="lk-request-info__time">сегодня в 9:38</span>
+                                    </div>
+                                    <div class="request-info__buttons">
+                                      <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                      <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="request-info__buttons">
-                                  <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                  <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
-                                    <span class="button-animate__hover"></span>
-                                  </button>
+                              </div>
+                              <div class="request-info__item">
+                                <div class="request-info__inner">
+                                  <div class="request-info__avatar">
+                                    <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
+                                  <div class="request-info__desc">
+                                    <div class="request-info__text">
+                                      <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
+                                      <strong>маникюр</strong> на
+                                      <strong>18:00</strong> услуга
+                                      <strong>SPA - маникюр</strong>
+                                      <span class="lk-request-info__time">сегодня в 9:38</span>
+                                    </div>
+                                    <div class="request-info__buttons">
+                                      <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                      <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="request-info__item">
+                                <div class="request-info__inner">
+                                  <div class="request-info__avatar">
+                                    <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
+                                  <div class="request-info__desc">
+                                    <div class="request-info__text">
+                                      <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
+                                      <strong>маникюр</strong> на
+                                      <strong>18:00</strong> услуга
+                                      <strong>SPA - маникюр</strong>
+                                      <span class="lk-request-info__time">сегодня в 9:38</span>
+                                    </div>
+                                    <div class="request-info__buttons">
+                                      <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                      <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="request-info__item">
+                                <div class="request-info__inner">
+                                  <div class="request-info__avatar">
+                                    <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
+                                  <div class="request-info__desc">
+                                    <div class="request-info__text">
+                                      <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
+                                      <strong>маникюр</strong> на
+                                      <strong>18:00</strong> услуга
+                                      <strong>SPA - маникюр</strong>
+                                      <span class="lk-request-info__time">сегодня в 9:38</span>
+                                    </div>
+                                    <div class="request-info__buttons">
+                                      <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                      <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="request-info__item">
+                                <div class="request-info__inner">
+                                  <div class="request-info__avatar">
+                                    <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
+                                  <div class="request-info__desc">
+                                    <div class="request-info__text">
+                                      <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
+                                      <strong>маникюр</strong> на
+                                      <strong>18:00</strong> услуга
+                                      <strong>SPA - маникюр</strong>
+                                      <span class="lk-request-info__time">сегодня в 9:38</span>
+                                    </div>
+                                    <div class="request-info__buttons">
+                                      <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                      <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
+                                        <span class="button-animate__hover"></span>
+                                      </button>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="request-info__item">
-                            <div class="request-info__inner">
-                              <div class="request-info__avatar">
-                                <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
-                              <div class="request-info__desc">
-                                <div class="request-info__text">
-                                  <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
-                                  <strong>маникюр</strong> на
-                                  <strong>18:00</strong> услуга
-                                  <strong>SPA - маникюр</strong>
-                                  <span class="lk-request-info__time">сегодня в 9:38</span>
-                                </div>
-                                <div class="request-info__buttons">
-                                  <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                  <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="request-info__item">
-                            <div class="request-info__inner">
-                              <div class="request-info__avatar">
-                                <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
-                              <div class="request-info__desc">
-                                <div class="request-info__text">
-                                  <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
-                                  <strong>маникюр</strong> на
-                                  <strong>18:00</strong> услуга
-                                  <strong>SPA - маникюр</strong>
-                                  <span class="lk-request-info__time">сегодня в 9:38</span>
-                                </div>
-                                <div class="request-info__buttons">
-                                  <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                  <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="request-info__item">
-                            <div class="request-info__inner">
-                              <div class="request-info__avatar">
-                                <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
-                              <div class="request-info__desc">
-                                <div class="request-info__text">
-                                  <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
-                                  <strong>маникюр</strong> на
-                                  <strong>18:00</strong> услуга
-                                  <strong>SPA - маникюр</strong>
-                                  <span class="lk-request-info__time">сегодня в 9:38</span>
-                                </div>
-                                <div class="request-info__buttons">
-                                  <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                  <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="request-info__item">
-                            <div class="request-info__inner">
-                              <div class="request-info__avatar">
-                                <img src="img/examples/user/cara-avatar-1.jpg" alt="avatar"> </div>
-                              <div class="request-info__desc">
-                                <div class="request-info__text">
-                                  <a href="#" class="request-info__user">Cara Delevingne</a> оставил(а) вам заявку в категории
-                                  <strong>маникюр</strong> на
-                                  <strong>18:00</strong> услуга
-                                  <strong>SPA - маникюр</strong>
-                                  <span class="lk-request-info__time">сегодня в 9:38</span>
-                                </div>
-                                <div class="request-info__buttons">
-                                  <button class="button-animate button-animate--gray js-btn-animate"> Отказаться
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                  <button class="button-animate button-animate--transparent js-btn-animate"> Подробнее
-                                    <span class="button-animate__hover"></span>
-                                  </button>
-                                </div>
-                              </div>
+                            <!-- end request-info__items -->
+                            <div class="request-info__footer">
+                              <a href="lk-request-info.html" class="button-link js-request-info-item--show">Показать все</a>
                             </div>
                           </div>
                         </div>
-                        <!-- end request-info__items -->
-                        <div class="request-info__footer">
-                          <a href="lk-request-info.html" class="button-link js-request-info-item--show">Показать все</a>
+                        <!-- end request-info -->
+                      </div>
+                      <!-- end  header-action__request-info -->
+                      <!-- begin header-user -->
+                      <div class="header-user bb-dropdown bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                        <span class="header-user__name">Adriana</span>
+                        <div class="header-user__img">
+                          <img src="img/examples/user/lima-avatar-1.jpg" alt="avatar"> </div>
+                        <div class="header-user__dropdown bb-dropdown__list">
+                          <ul>
+                            <li>
+                              <a href="#">Личный кабинет</a>
+                            </li>
+                            <li>
+                              <a href="#">Заявки</a>
+                            </li>
+                            <li>
+                              <a href="#">Акции</a>
+                            </li>
+                            <li>
+                              <a href="#">Баланс</a>
+                            </li>
+                            <li>
+                              <a href="#">Статистика</a>
+                            </li>
+                            <li>
+                              <a href="#">Настройки</a>
+                            </li>
+                            <li class="js-user-link" data-clipboard-action="copy" data-clipboard-text="https://beautybox.ru/user_01001110100">
+                              <a href="javascript:void(0);">Поделиться ссылкой</a>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                    </div>
-                    <!-- end request-info -->
-                  </div>
-                  <!-- end  header-action__request-info -->
-                  <!-- begin header-user -->
-                  <div class="header-user bb-dropdown bb-dropdown--hover">
-                    <span class="header-user__name">Adriana</span>
-                    <div class="header-user__img">
-                      <img src="img/examples/user/lima-avatar-1.jpg" alt="avatar"> </div>
-                    <div class="header-user__dropdown bb-dropdown__list">
-                      <ul>
-                        <li>
-                          <a href="#">Личный кабинет</a>
-                        </li>
-                        <li>
-                          <a href="#">Заявки</a>
-                        </li>
-                        <li>
-                          <a href="#">Акции</a>
-                        </li>
-                        <li>
-                          <a href="#">Баланс</a>
-                        </li>
-                        <li>
-                          <a href="#">Статистика</a>
-                        </li>
-                        <li>
-                          <a href="#">Настройки</a>
-                        </li>
-                        <li class="js-user-link" data-clipboard-action="copy" data-clipboard-text="https://beautybox.ru/user_01001110100">
-                          <a href="javascript:void(0);">Поделиться ссылкой</a>
-                        </li>
-                      </ul>
+                      <!-- end header-user -->
                     </div>
                   </div>
-                  <!-- end header-user -->
+                  <!-- end header-action -->
                 </div>
+                <!-- end header__inner -->
               </div>
-              <!-- end header-action -->
             </div>
+            <!-- end header__top -->
           </div>
         </header>
         <!-- end header -->
         <!-- begin main order -->
         <main class="main order">
-          <!-- begin order__wrap -->
-          <div class="order__wrap js-card-fixed">
-            <!-- begin order__top-line -->
-            <div class="order__top-line"> </div>
-            <!-- end order__top-line -->
-            <div class="container">
-              <!-- begin order__inner -->
-              <div class="order__inner">
-                <!-- begin order__left -->
-                <div class="order__left js-card-content-fixed"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi a, atque. Laboriosam adipisci eligendi repellat inventore perferendis eveniet. Suscipit nostrum, quas, earum fugit asperiores reiciendis sed dolorem, fugiat
-                  ipsam nulla voluptatibus temporibus nisi inventore alias enim distinctio facere magni est maiores adipisci qui laboriosam sapiente vitae praesentium! Iusto aut voluptas neque minus beatae quisquam amet sit, ipsa, dolorem voluptatum similique
-                  ea id delectus ab! Vel quam distinctio cupiditate eaque dignissimos deserunt, quasi cumque. At aliquam illo eligendi unde odio nobis rerum atque, ea inventore optio ipsum. Repellendus nisi recusandae, necessitatibus animi earum aut cum
-                  eaque blanditiis illum expedita quos voluptatibus rem tempore nemo beatae, autem officiis hic perspiciatis error similique maiores nesciunt ab dicta labore. Non minus sequi eum expedita culpa enim. Quia unde nisi, molestias sequi labore,
-                  sed omnis impedit consequatur ratione ipsam tenetur ipsa quo adipisci voluptate eum delectus illo nesciunt. Necessitatibus, provident, aperiam. Ullam consequatur blanditiis nobis eius amet saepe voluptas sunt at quae esse nam modi dignissimos
-                  qui maiores, inventore maxime sint perferendis incidunt similique, sed sit eos placeat quis! Adipisci ab et tempore quo at dolore molestias voluptates dolores voluptatem officiis facilis rem nemo, architecto commodi optio quam repellendus
-                  harum ut quidem. Quam distinctio laborum, blanditiis amet. Totam quaerat cum optio ipsa ab, id ea sequi dignissimos vitae repellat minus enim, ipsum odio, quia amet praesentium recusandae dicta eius iste dolores. Amet similique illum
-                  perferendis ut cum minima nemo possimus consequuntur repellendus, necessitatibus, officiis omnis debitis cupiditate suscipit voluptates excepturi reprehenderit placeat dicta id explicabo voluptatem. Dicta, eaque aliquam id? Maiores dolore
-                  non pariatur distinctio amet placeat, perspiciatis repellat, inventore, debitis deleniti ipsa vero consequuntur neque nam consequatur quidem sapiente itaque velit omnis minus maxime tempore. Est recusandae magni, tenetur laboriosam voluptas
-                  quisquam repudiandae in id at animi. Libero harum cupiditate vitae dignissimos maxime ut, iure esse ipsa officiis placeat aspernatur labore modi, doloribus velit itaque ipsum soluta id impedit officia omnis expedita. Possimus cum commodi,
-                  sunt vitae nihil ad velit tempora suscipit numquam, deleniti, delectus placeat laudantium magnam, adipisci culpa nisi? Dolorem, obcaecati, eaque. Repellat provident eaque quis, reprehenderit voluptas delectus assumenda adipisci aut molestiae
-                  eligendi. Veniam error aperiam temporibus quam, ullam expedita nostrum corporis quod. Alias quam cum dignissimos accusantium quis ipsa. Veritatis perspiciatis nisi, fuga iure eveniet dignissimos, quasi ratione nulla corporis earum illum
-                  aperiam vero hic deleniti consequuntur ex quos incidunt quisquam consectetur necessitatibus unde! Reiciendis repellat quasi sed quis repudiandae voluptate magnam! Consequatur eos molestiae culpa aspernatur sapiente incidunt voluptatibus
-                  quia quam, quas, quisquam exercitationem similique voluptates ab est numquam placeat sequi illum facere possimus expedita unde repudiandae! Omnis, magnam. Iure doloremque recusandae maiores perferendis! Tenetur nisi, fugiat non impedit
-                  quam quasi maxime excepturi ipsa aspernatur mollitia. Quasi exercitationem ipsam velit accusantium, soluta vel, odit laborum possimus qui maiores voluptates veniam maxime et, odio dignissimos. Quisquam, unde, libero doloremque eius commodi
-                  eos illo sint sed aperiam recusandae dolor harum rem fugiat quia. Quasi veniam repellendus, ut sapiente praesentium consequatur maiores officia voluptas quam, ullam amet recusandae vitae asperiores nisi aperiam. Pariatur quis neque sint
-                  sit inventore cum eveniet dolorum dolorem, ab fugit animi totam quos, officiis commodi unde veritatis minus dicta nulla, possimus nobis sed at ducimus consequatur. Molestias aliquid accusamus, nisi nam doloribus doloremque accusantium
-                  in, reiciendis, tempore pariatur totam, laboriosam porro eaque impedit. Numquam consequuntur debitis beatae officia temporibus, consequatur, corrupti aliquid ducimus ad autem non dolor repellat in nesciunt fugit soluta eaque impedit
-                  libero porro fuga odio laboriosam nobis ipsum. Consectetur incidunt, cumque vel molestiae provident odit, mollitia sequi. Animi quis inventore labore veritatis nemo ad laudantium odio laboriosam quod nostrum, quae eum fugit voluptatem
-                  tempore voluptatibus sunt, autem nam, aperiam quas adipisci deserunt. Magnam quas, perspiciatis non, necessitatibus blanditiis eius nobis enim itaque, possimus libero quo excepturi sequi debitis. Fugiat molestias, sit. Minus iste tenetur
-                  animi voluptatum modi cumque provident quaerat voluptates laudantium rerum qui sit id temporibus ratione quas dolorem architecto minima cupiditate, velit, fuga reprehenderit aut, at eum recusandae! Quas, officiis? Non unde maxime aut
-                  voluptatem vel iure earum cum? Unde impedit illum voluptatum cupiditate rem iusto pariatur, aliquam vero fugiat minima et, quas corrupti. Corporis at est illum corrupti porro, ea saepe ab, laboriosam dolore nobis iusto quibusdam, atque
-                  incidunt harum sed autem repellat sunt, maxime alias similique impedit! Quis, esse facere ipsum atque laboriosam, assumenda sed reiciendis magnam recusandae, mollitia quam quos vel. Consequatur numquam quibusdam in voluptas perferendis
-                  doloremque, repudiandae odio assumenda ex aliquam nisi qui! Quisquam ipsum possimus quaerat similique ducimus voluptatem error vero, fugiat nemo magnam inventore quidem doloremque libero maxime voluptatum suscipit laboriosam molestias
-                  quis deserunt fuga dolore. Ullam libero, vel at quaerat error totam unde soluta repellat ea eius excepturi reprehenderit molestias eveniet corporis id qui odio in, dignissimos voluptatem optio quisquam ut eligendi. Culpa a quibusdam
-                  laudantium repellendus tempora cupiditate molestiae ex nam facilis eligendi placeat non quae sapiente quidem dicta, nesciunt expedita repudiandae aut unde voluptate facere nulla magnam voluptates adipisci. Natus iure repudiandae aperiam
-                  magni quaerat eaque dolorum nobis assumenda magnam, sapiente fugiat, doloremque quod! Dolorem incidunt aspernatur corrupti cupiditate eaque temporibus quos sit, perferendis omnis iusto quidem sed, officia placeat mollitia dignissimos
-                  odit eius ducimus consequatur nulla distinctio, at ullam? Ex cupiditate cumque odit nam veritatis, nulla aliquid non distinctio deleniti officia autem repellat sint. Temporibus tempora possimus consequuntur, adipisci doloremque amet
-                  velit iste minima eius quibusdam laboriosam. Temporibus alias ad qui vero tenetur dolore vel placeat consectetur, minus animi id aliquam aspernatur inventore illum dolorum sapiente quo deleniti quaerat eius non enim molestias! Accusamus
-                  odio expedita voluptatem natus ad explicabo, eveniet debitis optio, rem, deleniti cum. Commodi tempora eveniet sit eum quo. Laborum deleniti, quos consequatur sequi natus nihil mollitia quo numquam dolorum. Voluptas similique blanditiis
-                  minima expedita assumenda. Veritatis tempora incidunt veniam quos facilis earum reprehenderit recusandae, placeat alias modi. Provident, id doloribus rem nobis dignissimos quia autem dolores dolorem natus adipisci sint quaerat. Ipsum
-                  doloribus dolorem minima, odio dolorum nostrum ad distinctio voluptatem asperiores atque modi sequi consequatur dolor deserunt autem ducimus eos totam cum hic delectus aliquam, placeat. </div>
-                <!-- end order__left -->
-                <!-- begin order__right -->
-                <div class="order__right">
-                  <!-- begin order-info -->
-                  <div class="order-info js-card-sticky">
-                    <div class="order-info__title">Nailz X Collab</div>
-                    <div class="order-info__inner">
-                      <div class="card-services-item js-card-services-item is-booked">
-                        <div class="card-services-item__left"> Классический маникюр
-                          <div class="card-services-item__box">
-                            <span class="card-services-item__time">30 мин</span>
-                          </div>
-                        </div>
-                        <div class="card-services-item__right">
-                          <div class="card-services-item__action card-services-item__action_add" style="display: none;">
-                            <span class="card-services-item__text">
-                              <span>от</span> 400
-                              <i class="fa fa-rub"></i>
-                            </span>
-                            <span class="card-services-item__btn js-card-services-item-btn--add"></span>
-                          </div>
-                          <div class="card-services-item__action card-services-item__action_del">
-                            <span class="card-services-item__text">
-                              <span>от</span> 400
-                              <i class="fa fa-rub"></i>
-                            </span>
-                            <span class="card-services-item__btn js-card-services-item-btn--del"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="order-info__footer">
-                      <span class="order-info__info">Выберите дату и время
-                        <br> чтобы продолжить</span>
-                      <span class="card-services-item__text">
-                        <span>от</span> 400
-                        <i class="fa fa-rub"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- end order-info -->
-                </div>
-                <!-- end order__right -->
-              </div>
-              <!-- end order__inner -->
+          <!-- begin order top-line -->
+          <div class="order__top-line">
+            <div class="order__inner">
+              <button class="button-link button-link--icon button-link--default js-prev">
+                <i class="far fa-arrow-left"></i>
+              </button>
+              <span class="order__title sm-hide">Создание заявки</span>
+              <span class="order__title order__title--mobile js-order-title">Создание заявки</span>
             </div>
           </div>
-          <!-- end order__wrap -->
+          <!-- end order top-line -->
+          <!-- begin order__inner -->
+          <div class="order__inner">
+            <!-- begin order__left -->
+            <div class="order__left">
+              <!-- begin service-desk -->
+              <div class="shadow-box sm-hide">
+                <div class="shadow-box__title">Комбинированный маникюр</div>
+                <div class="shadow-box__desc">Сочетание техник классического и аппаратного маникюра, что позволяет максимально качественно ухаживать за ногтями</div>
+              </div>
+              <!-- end service-desk -->
+              <!-- begin master-picker -->
+              <div class="master-picker">
+                <div class="user">
+                  <div class="user__avatar">
+                    <div class="user__img">
+                      <img src="img/examples/user/noavatar.jpg" alt="noavatar"> </div>
+                  </div>
+                </div>
+                <span class="master-picker__title">Любой мастер</span>
+                <button class="master-picker__btn btn-link js-master-picker" data-toggle="modal" data-target="#masterPicker">Выбрать</button>
+              </div>
+              <!-- end master-picker -->
+              <!-- begin daypicker -->
+              <div class="day-picker js-day-picker">
+                <!-- <div class="day-picker__top">
+					<span class="day-picker--month"></span>
+					<span class="day-picker--year"></span>,
+					<span class="day-picker--week">эта неделя</span>
+				</div>
+				<div class="day-picker__bottom">
+					<ul class="day-picker__carousel">
+						<li class="day-picker__week-arr day-picker__week-arr--left"><i class="fal fa-angle-left"></i></li>
+						<li class="day-picker__week-list">
+							
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Пн</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Вт</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Ср</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Чт</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Пт</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Сб</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+							<div class="day-picker__item ">
+								<div class="day-picker__item_weekday">Вс</div>
+								<div class="day-picker__item_day"></div>
+							</div>
+							
+						</li>
+						<li class="day-picker__week-arr day-picker__week-arr--right"><i class="fal fa-angle-right"></i></li>
+					</ul>
+				</div> --></div>
+              <!-- end daypicker -->
+              <!-- begin time-picker -->
+              <div class="time-picker__wrap">
+                <div class="time-picker">
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:00</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:05</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:10</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:15</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:20</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">09:25</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">09:30</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">09:35</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">09:40</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:45</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:50</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">09:55</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:00</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">10:05</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:10</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:15</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:20</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">10:25</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">10:30</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:35</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:40</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item is-disabled js-time-picker">
+                    <span class="time-picker__title">10:45</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="time-picker__item  js-time-picker">
+                    <span class="time-picker__title">10:50</span>
+                    <button class="time-picker__btn button-link button-link--icon button-link--default">
+                      <i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- end time-picker -->
+              <!-- begin order-detail -->
+              <div class="order-detail order-detail--mobile js-order-detail sm-only">
+                <div class="order-detail__title sm-hide">Детали заявки</div>
+                <div class="order-detail__item order-detail-item">
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-calendar-alt"></i>
+                    <div class="order-detail__desc">14 ноября 2018, Среда</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-map-marker-alt"></i>
+                    <div class="order-detail__desc">Ул. Факел Социализма, 24, ТЦ "Проспект"</div>
+                  </div>
+                </div>
+                <div class="order-detail__item ">
+                  <i class="order-detail__edit js-order-edit far fa-pencil"></i>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Комбинированный маникюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">11.15-11.30 (1ч 30мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Елизавета Лукьянова</div>
+                  </div>
+                </div>
+                <div class="order-detail__item ">
+                  <i class="order-detail__edit js-order-edit far fa-pencil"></i>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Педикюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">11.30-12.00 (1ч 20мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Мамасита Мамаситовна</div>
+                  </div>
+                </div>
+                <div class="order-detail__item ">
+                  <i class="order-detail__edit js-order-edit far fa-pencil"></i>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Бразильский маникюр</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">12.00-12.30 (1ч 00мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Карина Рататуева</div>
+                  </div>
+                </div>
+                <div class="order-detail__item ">
+                  <i class="order-detail__edit js-order-edit far fa-pencil"></i>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-info-circle"></i>
+                    <div class="order-detail__desc">Отцовский ремень</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fal fa-clock"></i>
+                    <div class="order-detail__desc">12.00-12.30 (1ч 00мин)</div>
+                  </div>
+                  <div class="order-detail__row">
+                    <i class="order-detail__icon fas fa-user"></i>
+                    <div class="order-detail__desc">Карина Рататуева</div>
+                  </div>
+                </div>
+                <a class="order-detail__btn btn btn-default sm-hide" href="#">Вернуться к заявкам</a>
+              </div>
+              <!-- end order-detail -->
+            </div>
+            <!-- end order__left -->
+            <!-- begin order__right -->
+            <div class="order__right">
+              <!-- begin user-cart -->
+              <div class="user-cart">
+                <div class="user-cart__top sm-hide">
+                  <div class="user-cart__date-time">
+                    <span class="user-cart__date-time_date">13 ноября 2018</span> -
+                    <span class="user-cart__date-time_date">11:15</span>
+                  </div>
+                  <div class="user-cart__user">
+                    <div class="user__avatar">
+                      <div class="user__img">
+                        <img src="img/examples/studio/logo.jpg" alt="noavatar"> </div>
+                    </div>
+                    <div class="user-cart__title">Студия красоты "Березка"</div>
+                  </div>
+                </div>
+                <div class="user-cart__item is-hover sm-hide">
+                  <a class="icon icon--delete" data-toggle="modal" data-target="#deleteService">
+                    <i class="fal fa-minus-circle"></i>
+                  </a>
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Комбинированный маникюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 30мин</div>
+                      <div class="user-cart__price">1200
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__item is-hover sm-hide">
+                  <a class="icon icon--delete" data-toggle="modal" data-target="#deleteService">
+                    <i class="fal fa-minus-circle"></i>
+                  </a>
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Педикюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 20мин</div>
+                      <div class="user-cart__price">900
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__item is-hover sm-hide">
+                  <a class="icon icon--delete" data-toggle="modal" data-target="#deleteService">
+                    <i class="fal fa-minus-circle"></i>
+                  </a>
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Бразильский маникюр</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 00мин</div>
+                      <div class="user-cart__price">600
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__item is-hover sm-hide">
+                  <a class="icon icon--delete" data-toggle="modal" data-target="#deleteService">
+                    <i class="fal fa-minus-circle"></i>
+                  </a>
+                  <div class="user-cart__inner">
+                    <div class="user-cart__title user-cart__title--service">Отцовский ремень</div>
+                    <div class="user-cart__details">
+                      <div class="user-cart__durance">1ч 00мин</div>
+                      <div class="user-cart__price">600
+                        <i class="fal fa-ruble-sign"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-cart__bottom">
+                  <div class="user-cart__item js-pay-check">
+                    <div class="user-cart__desc">Выберите дату и время, чтобы завершить запись</div>
+                    <div class="user-cart__price user-cart__price--total">2700
+                      <i class="fal fa-ruble-sign"></i>
+                    </div>
+                  </div>
+                  <a class="user-cart__btn btn btn-accent is-hidden" href="order-detail.html"> Подтвердить
+                    <span class="user-cart__price">2700
+                      <i class="fal fa-ruble-sign"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <!-- end user-cart -->
+            </div>
+            <!-- end order__right -->
+          </div>
+          <!-- end order__inner -->
+          <!-- begin modal-dialog master-picker -->
+          <div class="modal modal--inside-scroll fade" id="masterPicker">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Выберите мастера</h5>
+                </div>
+                <div class="modal-body no-padding">
+                  <div class="modal-body__scroll-wrap">
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/noavatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="modal-box__title">
+                            <span class="modal-box__title_top">Любой специалист</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="master-picker__item">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="noavatar"> </div>
+                          </div>
+                          <div class="master-picker__title">
+                            <span class="master-picker__title_top">Наташа Шилова</span>
+                            <span class="master-picker__title_bottom">Мастер</span>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Отменить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal-dialog -->
+          <!-- begin modal-dialog delete-service -->
+          <div class="modal fade" id="deleteService">
+            <div class="modal-dialog modal-dialog--sm">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p class="modal-body__title">Вы уверены, что хотите удалить
+                    <span class="font-medium">Комбинированный маникюр</span> из Вашей заявки?</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Нет</button>
+                  <button class="btn btn-default">Да</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal-dialog delete-service-->
         </main>
         <!-- end main order -->
       </div>
@@ -884,7 +1566,6 @@
     <!-- end windows -->
     <!-- begin scripts -->
     <script type="text/javascript" src="js/libs.min.js"></script>
-    <script src="js/assets/yandex.map.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/del.js"></script>
     <!-- end scripts -->
