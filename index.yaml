@@ -83,6 +83,10 @@ PageList:
   ready: 50
   desc : CRM избранное
 
+- file: crm-application.html
+  ready: 50
+  desc : CRM Создание заявки
+
 - file: crm-studio-services.html
   ready: 50
   desc : Услуги студии
