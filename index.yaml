@@ -1,0 +1,223 @@
+ProjectTitle: Beautybox
+
+PageList:
+- file: home.html
+  ready: 50
+  desc : Главная
+
+- file: catalog.html
+  ready: 50
+  desc : Каталог
+
+- file: card.html
+  ready: 50
+  desc : Подробная карточа
+
+- file: order.html
+  ready: 50
+  desc : Заявка
+
+- file: order-info.html
+  ready: 50
+  desc : Заявка информация
+
+- file: contacts.html
+  ready: 50
+  desc : Контакты
+
+  #Страница  входа
+- file: user-enter.html
+  ready: 50
+  desc : Вход
+
+  #Страница  регистрации
+- file: user-registration.html
+  ready: 50
+  desc : Регитрация пользователя
+
+  #Страница  востановления пароля
+- file: user-password-recovery.html
+  ready: 50
+  desc : Востановление пароля
+
+  #Приглашение мастера
+- file: user-invite-master.html
+  ready: 50
+  desc : Приглашение мастера
+
+#CRM
+- file: crm-step-0.html
+  ready: 50
+  desc : Шаг выбор категории
+
+- file: crm-step-1.html
+  ready: 50
+  desc : Шаг выбор услуги
+
+- file: crm-step-2.html
+  ready: 50
+  desc : Шаг адрес регистрации
+
+- file: crm-step-3.html
+  ready: 50
+  desc : Шаг заполнения информации
+
+- file: crm-step-4.html
+  ready: 50
+  desc : Шаг добавления фото
+
+- file: crm-studio-edit.html
+  ready: 50
+  desc : Редактировать, добавить студию
+
+- file: crm-dashboard.html
+  ready: 50
+  desc : CRM
+
+- file: crm-favorites.html
+  ready: 50
+  desc : CRM избранное
+
+- file: crm-calendar.html
+  ready: 50
+  desc : Календарь
+
+- file: crm-request.html
+  ready: 50
+  desc : Заявки студии
+
+- file: crm-request-info.html
+  ready: 50
+  desc : Уведомления
+
+- file: crm-page-albums.html
+  ready: 50
+  desc : Альбомы студии
+
+- file: crm-page-icons.html
+  ready: 50
+  desc : Альбомы студии
+
+- file: crm-page-instagram.html
+  ready: 50
+  desc : Ссылка для профиля инстаграм
+
+- file: crm-studio-network.html
+  ready: 50
+  desc : Сеть студий
+
+- file: crm-studio-worker.html
+  ready: 50
+  desc : Система управления студиями
+
+- file: crm-graph-work.html
+  ready: 50
+  desc : График работы
+
+- file: crm-studio-services.html
+  ready: 50
+  desc : Услуги студии
+
+- file: crm-studio-offer.html
+  ready: 50
+  desc : Предложения студии (вакансии, очучение)
+
+- file: crm-studio-vacancy.html
+  ready: 50
+  desc : Предложения студии (вакансии, очучение)
+
+- file: crm-studio-control.html
+  ready: 50
+  desc : Система управления студиями
+
+- file: crm-setings-profile.html
+  ready: 50
+  desc : CRM настройки профиля
+
+- file: crm-setings-password-recovery.html
+  ready: 50
+  desc : CRM востановление пароля
+
+#Одностраничник
+- file: onepage-main.html
+  ready: 50
+  desc : Одностраничник мини-сайт
+
+- file: onepage-home.html
+  ready: 50
+  desc : Одностраничник главная
+
+- file: onepage-about.html
+  ready: 50
+  desc : Одностраничник о нас
+
+- file: onepage-reviews.html
+  ready: 50
+  desc : Одностраничник отзывы
+
+- file: onepage-registration.html
+  ready: 50
+  desc : Одностраничник регистрация
+
+- file: onepage-registration-user.html
+  ready: 50
+  desc : Одностраничник регистрация пользователя
+
+- file: onepage-course.html
+  ready: 50
+  desc : Одностраничник курсы
+
+- file: onepage-courses.html
+  ready: 50
+  desc : Одностраничник курсы beauty box
+
+- file: onepage-services.html
+  ready: 50
+  desc : Одностраничник сервисы beauty box
+
+- file: onepage-icon.html
+  ready: 50
+  desc : Одностраничник иконки
+
+- file: onepage-welcome.html
+  ready: 50
+  desc : Страница приглашения
+
+- file: onepage-beauty-link.html
+  ready: 50
+  desc : Страница beauty link
+
+  #Блог
+- file: blog.html
+  ready: 50
+  desc : Блог
+
+- file: blog-item.html
+  ready: 50
+  desc : Блог пост
+
+  #404
+- file: 404.html
+  ready: 50
+  desc : Error Page
+
+  #Правила
+- file: rules-offer.html
+  ready: 50
+  desc : Пользовательское соглашение
+
+- file: rules-privacy.html
+  ready: 50
+  desc : Политика обработки персональных данных
+
+- file: popups.html
+  ready: 50
+  desc : Попап окна а CRM
+
+- file: popups-crm.html
+  ready: 50
+  desc : Попап окна а CRM
+
+- file: UiKit.html
+  ready: 50
+  desc : Ui Elements

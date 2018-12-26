@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295.001 61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cfd982;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 9px;
+        font-family: SegoePrint-Bold, Segoe Print;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="_3" data-name="3" transform="translate(10937 11627)">
+    <g id="_1" data-name="1" transform="translate(-10937 -11627)">
+      <ellipse id="Ellipse_969" data-name="Ellipse 969" class="cls-1" cx="30.5" cy="30.5" rx="30.5" ry="30.5" transform="translate(0 0)"/>
+      <text id="MANICURE" class="cls-2" transform="translate(30.429 34.398)"><tspan x="-25.741" y="0">MANICURE</tspan></text>
+    </g>
+    <g id="_1-2" data-name="1" transform="translate(-10859.068 -11627)">
+      <ellipse id="Ellipse_969-2" data-name="Ellipse 969" class="cls-1" cx="30.5" cy="30.5" rx="30.5" ry="30.5" transform="translate(0.068 0)"/>
+      <text id="PEDICURE" class="cls-2" transform="translate(30.598 33.633)"><tspan x="-24.181" y="0">PEDICURE</tspan></text>
+    </g>
+    <g id="_1-3" data-name="1" transform="translate(-10781 -11627)">
+      <ellipse id="Ellipse_969-3" data-name="Ellipse 969" class="cls-1" cx="30.5" cy="30.5" rx="30.5" ry="30.5" transform="translate(0 0)"/>
+      <text id="SALE" class="cls-2" transform="translate(30.274 34.398)"><tspan x="-12.248" y="0">SALE</tspan></text>
+    </g>
+    <g id="_1-4" data-name="1" transform="translate(-10703.068 -11627)">
+      <ellipse id="Ellipse_969-4" data-name="Ellipse 969" class="cls-1" cx="30.5" cy="30.5" rx="30.5" ry="30.5" transform="translate(0.068 0)"/>
+      <text id="PRICE" class="cls-2" transform="translate(30.401 33.633)"><tspan x="-14.067" y="0">PRICE</tspan></text>
+    </g>
+  </g>
+</svg>

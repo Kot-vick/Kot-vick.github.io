@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.892 55.02">
+    <defs>
+        <style>
+            .cls-1{fill:#ecf0f1}.cls-2{fill:#dedede}.cls-3,.cls-8{fill:#fff}.cls-3,.cls-4{stroke:#dedede}.cls-4,.cls-5{fill:none}.cls-4{stroke-width:2px}.cls-6{fill:#ec9d91}.cls-7{fill:#e4e4e4}.cls-9{stroke:none}
+        </style>
+    </defs>
+    <g id="image" transform="translate(0 -3.5)">
+        <g id="Group_595" data-name="Group 595" transform="translate(0 3.5)">
+            <path id="Rectangle_269" data-name="Rectangle 269" class="cls-1" transform="translate(1.235 1.235)" d="M0 0h67.914v51.861H0z"/>
+            <path id="Path_1179" data-name="Path 1179" class="cls-2" d="M70.383 57.831H0V3.5h70.383zM2.47 55.361h65.444V5.97H2.47z" transform="translate(0 -3.5)"/>
+        </g>
+        <g id="Group_596" data-name="Group 596" transform="translate(0 3.5)">
+            <g id="Rectangle_9113" data-name="Rectangle 9113" class="cls-3">
+                <path class="cls-9" d="M0 0h70.891v55.02H0z"/>
+                <path class="cls-5" d="M.5.5h69.891v54.02H.5z"/>
+            </g>
+            <path id="Rectangle_270" data-name="Rectangle 270" class="cls-4" transform="translate(6.174 6.174)" d="M0 0h58.035v41.983H0z"/>
+            <path id="Path_1180" data-name="Path 1180" class="cls-5" d="M64.5 51.953H4V7.5h60.5zm-58.03-2.47h55.565V9.97H6.47z" transform="translate(.939 -2.561)"/>
+        </g>
+        <circle id="Ellipse_203" data-name="Ellipse 203" class="cls-6" cx="5.642" cy="5.642" r="5.642" transform="translate(12.88 14.613)"/>
+        <path id="Path_1181" data-name="Path 1181" class="cls-7" d="M56.518 35.455l-1.235-1.372L40.465 20.5 27.5 34.7l6.77 6.77 4.96 4.96h17.288z" transform="translate(6.457 3.992)"/>
+        <path id="Path_1182" data-name="Path 1182" class="cls-7" d="M6 45.018h38.279l-4.96-4.96-13.541-13.541L6 43.783z" transform="translate(1.409 5.404)"/>
+        <g id="Group_597" data-name="Group 597" transform="translate(43.395 30.844)">
+            <circle id="Ellipse_204" data-name="Ellipse 204" class="cls-6" cx="13.237" cy="13.237" r="13.237"/>
+            <path id="Path_1183" data-name="Path 1183" class="cls-8" d="M54.116 43.554h-5.044v-5.045a1.009 1.009 0 0 0-2.018 0v5.045h-5.045a1.009 1.009 0 0 0 0 2.018h5.045v5.045a1.009 1.009 0 1 0 2.018 0v-5.045h5.045a1.009 1.009 0 0 0 0-2.018z" transform="translate(-34.826 -31.326)"/>
+        </g>
+    </g>
+</svg>

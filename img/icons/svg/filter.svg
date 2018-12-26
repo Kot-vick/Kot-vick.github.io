@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.07 110.57">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-1,.cls-2{stroke:#707070}.cls-2,.cls-3{fill:#fff}.cls-4{fill:#d5d6db}.cls-5{fill:#707070}.cls-6{fill:#e9e9e9}.cls-7{fill:#cfcfcf}.cls-8{fill:#e18577}
+        </style>
+    </defs>
+    <g id="web" transform="translate(.5)">
+        <path id="Path_6632" data-name="Path 6632" class="cls-1" d="M105.128 80.431H4.942A4.942 4.942 0 0 0 0 85.372v82.175a4.942 4.942 0 0 0 4.942 4.942h100.186a4.942 4.942 0 0 0 4.942-4.942V85.372a4.942 4.942 0 0 0-4.942-4.941z" transform="translate(0 -62.419)"/>
+        <g id="Group_1779" data-name="Group 1779" transform="translate(8.005 25.111)">
+            <path id="Rectangle_8087" data-name="Rectangle 8087" class="cls-2" transform="translate(0 13.36)" d="M0 0h94.064v63.6H0z"/>
+            <path id="Rectangle_8088" data-name="Rectangle 8088" class="cls-3" d="M0 0h67.257v5.689H0z"/>
+        </g>
+        <path id="Rectangle_8089" data-name="Rectangle 8089" class="cls-4" transform="translate(8.005 99.051)" d="M0 0h94.064v3.009H0z"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-5" cx="2.845" cy="2.845" r="2.845" transform="translate(78.63 25.111)"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-5" cx="2.845" cy="2.845" r="2.845" transform="translate(87.504 25.111)"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-5" cx="2.845" cy="2.845" r="2.845" transform="translate(96.379 25.111)"/>
+        <path id="Rectangle_8090" data-name="Rectangle 8090" class="cls-6" transform="translate(13.089 42.503)" d="M0 0h22.78v22.78H0z"/>
+        <path id="Path_6635" data-name="Path 6635" class="cls-6" d="M0 0h22.78v22.78H0z" transform="translate(13.089 71.247)"/>
+        <path id="Rectangle_8092" data-name="Rectangle 8092" class="cls-7" transform="translate(13.089 60.825)" d="M0 0h22.78v4.461H0z"/>
+        <path id="Path_6634" data-name="Path 6634" class="cls-7" d="M0 0h22.78v4.461H0z" transform="translate(13.089 89.569)"/>
+        <g id="Group_1780" data-name="Group 1780" transform="translate(43.615 42.503)">
+            <path id="Rectangle_8094" data-name="Rectangle 8094" class="cls-6" d="M0 0h52.753v4.003H0z"/>
+            <path id="Rectangle_8095" data-name="Rectangle 8095" class="cls-6" transform="translate(0 9.866)" d="M0 0h52.753v4.003H0z"/>
+            <path id="Rectangle_8096" data-name="Rectangle 8096" class="cls-6" transform="translate(0 19.732)" d="M0 0h28.65v4.003H0z"/>
+            <path id="Rectangle_8097" data-name="Rectangle 8097" class="cls-6" transform="translate(0 28.27)" d="M0 0h52.753v4.003H0z"/>
+            <path id="Rectangle_8098" data-name="Rectangle 8098" class="cls-6" transform="translate(0 38.135)" d="M0 0h52.753v4.003H0z"/>
+            <path id="Rectangle_8099" data-name="Rectangle 8099" class="cls-6" transform="translate(0 47.996)" d="M0 0h28.65v4.003H0z"/>
+        </g>
+        <path id="Path_6633" data-name="Path 6633" class="cls-8" d="M70.285 0H22.13l18.2 26.761v27.032l11.756-7.3V26.761z" transform="translate(-17.174)"/>
+    </g>
+</svg>

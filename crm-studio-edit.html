@@ -1,0 +1,2964 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Редактирование студии</title>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="application-name" content>
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFCC01">
+    <meta name="theme-color" content="#ff8272">
+    <meta name="msapplication-navbutton-color" content="#ff8272">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff8272">
+    <link type="image/png" href="img/favicon/favicon-32x32.png" rel="shortcut icon" sizes="32x32">
+    <link type="image/png" href="img/favicon/favicon-96x96.png" rel="shortcut icon" sizes="96x96">
+    <link type="image/x-icon" href="img/favicon/favicon.ico" rel="shortcut icon" sizes="16x16">
+    <link href="img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link rel="stylesheet" media="all" href="css/cabinet.css"> </head>
+  <body class="loading">
+    <!-- begin wrapper -->
+    <div class="wrapper page-cabinet ">
+      <!-- begin mobile-nav -->
+      <nav class="mobile-nav js-mobile-nav sm-only--flex">
+        <div class="mobile-nav__header" style="background-image: url('img/general/bg/mobile-nav-bg.jpg');">
+          <div class="header-user is-authorized">
+            <a href="#" class="header-user__link">
+              <div class="header-user__img">
+                <img src="img/examples/user/lima-avatar-1.jpg" alt="avatar"> </div>
+              <div class="header-user__inner">
+                <div class="header-user__name">Adriana</div>
+                <div class="header-user__desc">Victoria Sicrect's studio</div>
+              </div>
+            </a>
+            <a href="#auth-form" class="mobile-nav__link mobile-nav__link--enter button-link" data-fancybox-no-touch>Войти</a>
+          </div>
+          <div class="button-box">
+            <button class="btn-icon js-mobile-nav--close">
+              <i class="fal fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="mobile-nav__list bb-accordeon bb-accordeon--mobile js-bb-accordeon">
+          <li class="mobile-nav__item ">
+            <a href="crm-dashboard.html" class="mobile-nav__link">
+              <i class="fal fa-home mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Дашборд</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item ">
+            <a href="crm-calendar.html" class="mobile-nav__link">
+              <i class="fal fa-calendar-alt mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Календарь</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item is-active">
+            <a href="crm-graph-work.html" class="mobile-nav__link">
+              <i class="fal fa-chart-bar mobile-nav__icon"></i>
+              <span class="mobile-nav__text">График работы</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item ">
+            <a href="crm-studio-worker.html" class="mobile-nav__link">
+              <i class="fal fa-address-book mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Клиенты</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item ">
+            <a href="crm-studio-photo.html" class="mobile-nav__link">
+              <i class="fal fa-camera-alt mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Фото</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item ">
+            <a href="crm-favorites.html" class="mobile-nav__link">
+              <i class="fal fa-heart mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Избранное</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item bb-accordeon__item">
+            <div class="mobile-nav__link bb-accordeon__title">
+              <i class="fab fa-instagram mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Instagram</span>
+            </div>
+            <div class="bb-accordeon__content">
+              <a href="onepage-home.html">BeautyIcons</a>
+              <a href="onepage-icon.html">BeautyLink</a>
+            </div>
+          </li>
+          <li class="mobile-nav__item bb-accordeon__item">
+            <div class="mobile-nav__link bb-accordeon__title">
+              <i class="fal fa-briefcase mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Студия</span>
+            </div>
+            <div class="bb-accordeon__content">
+              <a href="crm-studio-worker.html">Сотрудники</a>
+              <a href="crm-studio-network.html">Сеть студий</a>
+              <a href="crm-studio-services.html">Услуги</a>
+              <a href="#">Комбо услуги</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Обучение</a>
+              <a href="#">Статистика</a>
+            </div>
+          </li>
+          <li class="mobile-nav__item bb-accordeon__item">
+            <div class="mobile-nav__link bb-accordeon__title">
+              <i class="fal fa-cog mobile-nav__icon"></i>
+              <span class="mobile-nav__text">Настройки</span>
+            </div>
+            <div class="bb-accordeon__content">
+              <a href="crm-setings-profile.html">Профиль</a>
+              <a href="crm-setings-role.html">Роль</a>
+              <a href="crm-studio-control.html">Система управления студиями</a>
+              <a href="crm-setings-password-recovery.html">Изменить пароль</a>
+            </div>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="javascript:void(0);" class="mobile-nav__link mobile-nav__link--link js-user-link" data-clipboard-action="copy" data-clipboard-text="https://beautybox.ru/user_01001110100">
+              <span class="mobile-nav__text">Поделиться ссылкой</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-nav__link mobile-nav__link--leave button-link">
+          <i class="fal fa-sign-in-alt"></i>Выйти</a>
+      </nav>
+      <!-- end mobile-nav -->
+      <!-- begin wrapper__inner -->
+      <div class="wrapper__inner">
+        <!-- begin header -->
+        <header class="header ">
+          <!-- begin header__top -->
+          <div class="header__top">
+            <!-- begin header__inner -->
+            <div class="header__inner">
+              <!-- begin toggle-menu -->
+              <div class="js-main-nav-btn toggle-menu">
+                <div class="toggle-menu__inner">
+                  <span class="toggle-menu__icon"></span>
+                  <span class="toggle-menu__icon"></span>
+                  <span class="toggle-menu__icon"></span>
+                  <span class="toggle-menu__icon"></span>
+                </div>
+              </div>
+              <!-- end toggle-menu -->
+              <!-- begin header__title -->
+              <div class="header__title wow fadeInDown" data-wow-delay="0.3s">
+                <span>Редактирование студии</span>
+              </div>
+              <!-- end header__title -->
+              <div class="header-action">
+                <!-- begin header-action__request-info -->
+                <div class="header-action__request-info">
+                  <!-- begin request-info -->
+                  <div class="request-info bb-dropdown bb-dropdown--another js-bb-dropdown" data-dropdown-position="right">
+                    <div class="bb-dropdown__list">
+                      <span class="request-info__header">Уведомления</span>
+                      <!-- begin request-info__items -->
+                      <div class="request-info__items">
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/cara-avatar.jpg" alt="Лиза Демитрова"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Лиза Демитрова</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/daniela-avatar.jpg" alt="Ангелина Левинникова"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Ангелина Левинникова</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/lima-avatar.jpg" alt="Наташа Шилова"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Наташа Шилова</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/cara-avatar-1.jpg" alt="Ольга Оченьдлиннаяфамилия"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Ольга Оченьдлиннаяфамилия</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/lima-avatar-1.jpg" alt="Карина Мелина"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Карина Мелина</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/noavatar.jpg" alt="Саша Абдулина"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Саша Абдулина</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-info__item">
+                          <div class="request-info__inner">
+                            <div class="request-info__avatar">
+                              <img src="img/examples/user/avatar.jpg" alt="Дядя Вася"> </div>
+                            <div class="request-info__desc">
+                              <a class="request-info__title" href="#">Дядя Вася</a>
+                              <div class="request-info__text"> оставил(а) заявку в категории
+                                <strong>маникюр</strong> на
+                                <strong>14.12.2018 18:00</strong>
+                              </div>
+                              <div class="request-info__time">сегодня в 9:38</div>
+                            </div>
+                            <div class="info-block info-block--arrow bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown request-info__action">
+                              <div class="bb-dropdown__list">
+                                <ul class="info-block__list">
+                                  <li class="info-block__item">
+                                    <a class="info-block__link" href="#dell"> Скрыть </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end request-info__items -->
+                      <div class="empty request-info__empty">
+                        <img class="empty__icon mb-15" src="img/icons/svg/messengers.svg" alt="Нет заявок">
+                        <div class="empty__text">У Вас пока нет уведомлений</div>
+                      </div>
+                      <div class="request-info__footer">
+                        <a class="btn-link js-request-info-item--show" href="crm-request-info.html">Показать все</a>
+                      </div>
+                    </div>
+                    <i class="fas fa-bell request-info__icon" data-count="17"></i>
+                  </div>
+                  <!-- end request-info -->
+                </div>
+                <!-- end header-action__request-info -->
+                <!-- begin header-user -->
+                <div class="header-user bb-dropdown js-bb-dropdown bb-dropdown--another wow fadeInRight" data-dropdown-position="right" data-wow-delay="0.6s">
+                  <span class="header-user__name">Березка</span>
+                  <div class="header-user__img">
+                    <img src="img/examples/studio/logo.jpeg" alt="avatar" /> </div>
+                  <div class="header-user__dropdown bb-dropdown__list">
+                    <ul>
+                      <li>
+                        <a href="#">Личный кабинет</a>
+                      </li>
+                      <li>
+                        <a href="#">Заявки</a>
+                      </li>
+                      <li>
+                        <a href="#">Акции</a>
+                      </li>
+                      <li>
+                        <a href="#">Баланс</a>
+                      </li>
+                      <li>
+                        <a href="#">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#">Настройки</a>
+                      </li>
+                      <li class="js-user-link" data-clipboard-action="copy" data-clipboard-text="https://beautybox.ru/user_01001110100">
+                        <a href="javascript:void(0);">Поделиться ссылкой</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end header-user -->
+              </div>
+            </div>
+            <!-- end header__inner -->
+          </div>
+          <!-- end header__top -->
+        </header>
+        <!-- end header -->
+        <!-- begin menu -->
+        <nav class="menu js-menu">
+          <div class="menu__top">
+            <div class="menu__hamburger">
+              <a href="javascript:void(0);" class="js-hamburger hamburger">
+                <span></span>
+              </a>
+            </div>
+            <!-- begin logo -->
+            <div class="logo menu__logo">
+              <a href="/" class="logo__link">beauty
+                <span>box</span>
+              </a>
+            </div>
+            <!-- end logo -->
+          </div>
+          <ul class="menu__list js-slide-line-container" data-slide-line-position="vertical">
+            <li class="menu__item pos-xs-2">
+              <a href="crm-dashboard.html" class="menu__link" tooltip="Дашборд" flow="right">
+                <i class="fal fa-home menu__icon"></i>
+                <span class="menu__text">Дашборд</span>
+              </a>
+            </li>
+            <li class="menu__item pos-xs-1">
+              <a href="crm-calendar.html" class="menu__link" tooltip="Календарь" flow="right">
+                <i class="fal fa-calendar-alt menu__icon"></i>
+                <span class="menu__text">Календарь</span>
+              </a>
+            </li>
+            <li class="menu__item xs-hide">
+              <a href="crm-graph-work.html" class="menu__link" tooltip="График работы" flow="right">
+                <i class="fal fa-chart-bar menu__icon"></i>
+                <span class="menu__text">График работы</span>
+              </a>
+            </li>
+            <li class="menu__item is-active pos-xs-3">
+              <a href="crm-chat.html" class="menu__link" tooltip="Сообщения" flow="right">
+                <i class="fal fa-comments-alt menu__icon"></i>
+                <i class="menu__count">32</i>
+                <span class="menu__text">Сообщения</span>
+              </a>
+            </li>
+            <li class="menu__item xs-hide">
+              <a href="crm-studio-worker.html" class="menu__link" tooltip="Клиенты" flow="right">
+                <i class="fal fa-address-book menu__icon"></i>
+                <span class="menu__text">Клиенты</span>
+              </a>
+            </li>
+            <li class="menu__item xs-hide">
+              <a href="crm-studio-photo.html" class="menu__link" tooltip="Фото" flow="right">
+                <i class="fal fa-camera-alt menu__icon"></i>
+                <span class="menu__text">Фото</span>
+              </a>
+            </li>
+            <li class="menu__item xs-hide">
+              <a href="crm-favorites.html" class="menu__link" tooltip="Избранное" flow="right">
+                <i class="fal fa-heart menu__icon"></i>
+                <span class="menu__text">Избранное</span>
+              </a>
+            </li>
+            <li class="menu__item js-menu-item-dropdown pos-xs-1">
+              <a href="javascript:void(0);" class="menu__link" tooltip="Студия" flow="right">
+                <i class="fal fa-briefcase menu__icon"></i>
+                <span class="menu__text">Студия</span>
+              </a>
+              <div class="menu__dropdown menu-dropdown">
+                <span class="menu-dropdown__title">Студия</span>
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item ">
+                    <a href="#" class="menu-dropdown__link">Сотрудники</a>
+                  </li>
+                  <li class="menu-dropdown__item is-active">
+                    <a href="#" class="menu-dropdown__link">Сеть студий</a>
+                  </li>
+                  <li class="menu-dropdown__item ">
+                    <a href="#" class="menu-dropdown__link">Услуги</a>
+                  </li>
+                  <li class="menu-dropdown__item ">
+                    <a href="#" class="menu-dropdown__link">Вакансии</a>
+                  </li>
+                  <li class="menu-dropdown__item ">
+                    <a href="#" class="menu-dropdown__link">Обучение</a>
+                  </li>
+                  <li class="menu-dropdown__item ">
+                    <a href="#" class="menu-dropdown__link">Статистика</a>
+                  </li>
+                  <li class="menu-dropdown__item ">
+                    <a href="crm-studio-instagram.html" class="menu-dropdown__link">Instagram</a>
+                  </li>
+                </ul>
+                <button class="menu-dropdown__item menu-dropdown__item--abort">
+                  <span class="menu-dropdown__link menu-dropdown__link--abort">Отмена</span>
+                </button>
+              </div>
+            </li>
+            <li class="menu__item menu__item--last js-menu-item-dropdown xs-hide">
+              <a href="javascript:void(0);" class="menu__link" tooltip="Instagram" flow="right">
+                <i class="fab fa-instagram menu__icon"></i>
+                <span class="menu__text">Instagram</span>
+              </a>
+              <div class="menu__dropdown menu-dropdown">
+                <span class="menu-dropdown__title">Instagram</span>
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item">
+                    <a href="onepage-home.html" class="menu-dropdown__link">BeautyLink</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="onepage-icon.html" class="menu-dropdown__link">BeautyIcons</a>
+                  </li>
+                </ul>
+                <button class="menu-dropdown__item menu-dropdown__item--abort">
+                  <span class="menu-dropdown__link menu-dropdown__link--abort">Отмена</span>
+                </button>
+              </div>
+            </li>
+            <li class="menu__item menu__item--border js-menu-item-dropdown pos-xs-3">
+              <a href="#" class="menu__link" tooltip="Настройки" flow="right">
+                <i class="fal fa-cog menu__icon"></i>
+                <span class="menu__text">Настройки</span>
+              </a>
+              <div class="menu__dropdown menu-dropdown">
+                <span class="menu-dropdown__title">Настройки</span>
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item">
+                    <a href="crm-setings-profile.html" class="menu-dropdown__link">Профиль</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="crm-setings-role.html" class="menu-dropdown__link">Роль</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="crm-studio-control.html" class="menu-dropdown__link">Система управления</a>
+                  </li>
+                  <li class="menu-dropdown__item">
+                    <a href="crm-setings-password-recovery.html" class="menu-dropdown__link">Изменить пароль</a>
+                  </li>
+                </ul>
+                <button class="menu-dropdown__item menu-dropdown__item--abort">
+                  <span class="menu-dropdown__link menu-dropdown__link--abort">Отмена</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="menu__overlay js-menu-overlay"></div>
+        </nav>
+        <!-- end menu -->
+        <!-- begin cabinet -->
+        <main class="main cabinet ">
+          <div class="container container--sm">
+            <div class="tab js-bb-tab cabinet__tab">
+              <ul class="tab__titles">
+                <li class="tab__title">
+                  <a class="tab__link" href="#step-1">
+                    <i class="fal fa-map-marker-alt tab__icon"></i> Адрес </a>
+                </li>
+                <li class="tab__title">
+                  <a class="tab__link" href="#step-2">
+                    <i class="fal fa-info tab__icon"></i> О студии </a>
+                </li>
+                <li class="tab__title">
+                  <a class="tab__link" href="#step-3">
+                    <i class="fal fa-camera tab__icon"></i> Фото </a>
+                </li>
+              </ul>
+              <div id="step-1">
+                <!-- begin profile-editor__form -->
+                <div class="profile-editor__form">
+                  <div class="profile-editor__inner">
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Страна:</div>
+                      <div class="profile-editor__input">
+                        <select class="js-select-native" data-placeholder="Не выбрана">
+                          <option></option>
+                          <option value="Россия">Россия</option>
+                          <option value="Абхазия">Абхазия</option>
+                          <option value="Австралия">Австралия</option>
+                          <option value="Австрия">Австрия</option>
+                          <option value="Азербайджан">Азербайджан</option>
+                          <option value="Албания">Албания</option>
+                          <option value="Алжир">Алжир</option>
+                          <option value="Ангола">Ангола</option>
+                          <option value="Ангуилья">Ангуилья</option>
+                          <option value="Андорра">Андорра</option>
+                          <option value="Антигуа и Барбуда">Антигуа и Барбуда</option>
+                          <option value="Антильские острова">Антильские острова</option>
+                          <option value="Аргентина">Аргентина</option>
+                          <option value="Армения">Армения</option>
+                          <option value="Афганистан">Афганистан</option>
+                          <option value="Багамские острова">Багамские острова</option>
+                          <option value="Бангладеш">Бангладеш</option>
+                          <option value="Барбадос">Барбадос</option>
+                          <option value="Бахрейн">Бахрейн</option>
+                          <option value="Беларусь">Беларусь</option>
+                          <option value="Белиз">Белиз</option>
+                          <option value="Бельгия">Бельгия</option>
+                          <option value="Бенин">Бенин</option>
+                          <option value="Бермуды">Бермуды</option>
+                          <option value="Болгария">Болгария</option>
+                          <option value="Боливия">Боливия</option>
+                          <option value="Босния/Герцеговина">Босния/Герцеговина</option>
+                          <option value="Ботсвана">Ботсвана</option>
+                          <option value="Бразилия">Бразилия</option>
+                          <option value="Британские Виргинские о-ва">Британские Виргинские о-ва</option>
+                          <option value="Бруней">Бруней</option>
+                          <option value="Буркина Фасо">Буркина Фасо</option>
+                          <option value="Бурунди">Бурунди</option>
+                          <option value="Бутан">Бутан</option>
+                          <option value="Вануату">Вануату</option>
+                          <option value="Ватикан">Ватикан</option>
+                          <option value="Великобритания">Великобритания</option>
+                          <option value="Венгрия">Венгрия</option>
+                          <option value="Венесуэла">Венесуэла</option>
+                          <option value="Вьетнам">Вьетнам</option>
+                          <option value="Габон">Габон</option>
+                          <option value="Гаити">Гаити</option>
+                          <option value="Гайана">Гайана</option>
+                          <option value="Гамбия">Гамбия</option>
+                          <option value="Гана">Гана</option>
+                          <option value="Гваделупа">Гваделупа</option>
+                          <option value="Гватемала">Гватемала</option>
+                          <option value="Гвинея">Гвинея</option>
+                          <option value="Гвинея-Бисау">Гвинея-Бисау</option>
+                          <option value="Германия">Германия</option>
+                          <option value="Гернси остров">Гернси остров</option>
+                          <option value="Гибралтар">Гибралтар</option>
+                          <option value="Гондурас">Гондурас</option>
+                          <option value="Гонконг">Гонконг</option>
+                          <option value="Государство Палестина">Государство Палестина</option>
+                          <option value="Гренада">Гренада</option>
+                          <option value="Гренландия">Гренландия</option>
+                          <option value="Греция">Греция</option>
+                          <option value="Грузия">Грузия</option>
+                          <option value="ДР Конго">ДР Конго</option>
+                          <option value="Дания">Дания</option>
+                          <option value="Джерси остров">Джерси остров</option>
+                          <option value="Джибути">Джибути</option>
+                          <option value="Доминиканская Республика">Доминиканская Республика</option>
+                          <option value="Египет">Египет</option>
+                          <option value="Замбия">Замбия</option>
+                          <option value="Западная Сахара">Западная Сахара</option>
+                          <option value="Зимбабве">Зимбабве</option>
+                          <option value="Израиль">Израиль</option>
+                          <option value="Индия">Индия</option>
+                          <option value="Индонезия">Индонезия</option>
+                          <option value="Иордания">Иордания</option>
+                          <option value="Ирак">Ирак</option>
+                          <option value="Иран">Иран</option>
+                          <option value="Ирландия">Ирландия</option>
+                          <option value="Исландия">Исландия</option>
+                          <option value="Испания">Испания</option>
+                          <option value="Италия">Италия</option>
+                          <option value="Йемен">Йемен</option>
+                          <option value="Кабо-Верде">Кабо-Верде</option>
+                          <option value="Казахстан">Казахстан</option>
+                          <option value="Камбоджа">Камбоджа</option>
+                          <option value="Камерун">Камерун</option>
+                          <option value="Канада">Канада</option>
+                          <option value="Катар">Катар</option>
+                          <option value="Кения">Кения</option>
+                          <option value="Кипр">Кипр</option>
+                          <option value="Китай">Китай</option>
+                          <option value="Колумбия">Колумбия</option>
+                          <option value="Коста-Рика">Коста-Рика</option>
+                          <option value="Кот-д&#39;Ивуар">Кот-д&#39;Ивуар</option>
+                          <option value="Куба">Куба</option>
+                          <option value="Кувейт">Кувейт</option>
+                          <option value="Кука острова">Кука острова</option>
+                          <option value="Кыргызстан">Кыргызстан</option>
+                          <option value="Лаос">Лаос</option>
+                          <option value="Латвия">Латвия</option>
+                          <option value="Лесото">Лесото</option>
+                          <option value="Либерия">Либерия</option>
+                          <option value="Ливан">Ливан</option>
+                          <option value="Ливия">Ливия</option>
+                          <option value="Литва">Литва</option>
+                          <option value="Лихтенштейн">Лихтенштейн</option>
+                          <option value="Люксембург">Люксембург</option>
+                          <option value="Маврикий">Маврикий</option>
+                          <option value="Мавритания">Мавритания</option>
+                          <option value="Мадагаскар">Мадагаскар</option>
+                          <option value="Македония">Македония</option>
+                          <option value="Малайзия">Малайзия</option>
+                          <option value="Мали">Мали</option>
+                          <option value="Мальдивские острова">Мальдивские острова</option>
+                          <option value="Мальта">Мальта</option>
+                          <option value="Марокко">Марокко</option>
+                          <option value="Мексика">Мексика</option>
+                          <option value="Мозамбик">Мозамбик</option>
+                          <option value="Молдова">Молдова</option>
+                          <option value="Монако">Монако</option>
+                          <option value="Монголия">Монголия</option>
+                          <option value="Мьянма (Бирма)">Мьянма (Бирма)</option>
+                          <option value="Мэн о-в">Мэн о-в</option>
+                          <option value="Намибия">Намибия</option>
+                          <option value="Непал">Непал</option>
+                          <option value="Нигер">Нигер</option>
+                          <option value="Нигерия">Нигерия</option>
+                          <option value="Нидерланды (Голландия)">Нидерланды (Голландия)</option>
+                          <option value="Никарагуа">Никарагуа</option>
+                          <option value="Новая Зеландия">Новая Зеландия</option>
+                          <option value="Новая Каледония">Новая Каледония</option>
+                          <option value="Норвегия">Норвегия</option>
+                          <option value="О.А.Э.">О.А.Э.</option>
+                          <option value="Оман">Оман</option>
+                          <option value="Пакистан">Пакистан</option>
+                          <option value="Палау">Палау</option>
+                          <option value="Панама">Панама</option>
+                          <option value="Папуа Новая Гвинея">Папуа Новая Гвинея</option>
+                          <option value="Парагвай">Парагвай</option>
+                          <option value="Перу">Перу</option>
+                          <option value="Питкэрн остров">Питкэрн остров</option>
+                          <option value="Польша">Польша</option>
+                          <option value="Португалия">Португалия</option>
+                          <option value="Пуэрто Рико">Пуэрто Рико</option>
+                          <option value="Республика Конго">Республика Конго</option>
+                          <option value="Реюньон">Реюньон</option>
+                          <option value="Руанда">Руанда</option>
+                          <option value="Румыния">Румыния</option>
+                          <option value="США">США</option>
+                          <option value="Сальвадор">Сальвадор</option>
+                          <option value="Самоа">Самоа</option>
+                          <option value="Сан-Марино">Сан-Марино</option>
+                          <option value="Сан-Томе и Принсипи">Сан-Томе и Принсипи</option>
+                          <option value="Саудовская Аравия">Саудовская Аравия</option>
+                          <option value="Свазиленд">Свазиленд</option>
+                          <option value="Святая Люсия">Святая Люсия</option>
+                          <option value="Северная Корея">Северная Корея</option>
+                          <option value="Сейшеллы">Сейшеллы</option>
+                          <option value="Сен-Пьер и Микелон">Сен-Пьер и Микелон</option>
+                          <option value="Сенегал">Сенегал</option>
+                          <option value="Сент Китс и Невис">Сент Китс и Невис</option>
+                          <option value="Сент-Винсент и Гренадины">Сент-Винсент и Гренадины</option>
+                          <option value="Сербия">Сербия</option>
+                          <option value="Сингапур">Сингапур</option>
+                          <option value="Сирия">Сирия</option>
+                          <option value="Словакия">Словакия</option>
+                          <option value="Словения">Словения</option>
+                          <option value="Соломоновы острова">Соломоновы острова</option>
+                          <option value="Сомали">Сомали</option>
+                          <option value="Судан">Судан</option>
+                          <option value="Суринам">Суринам</option>
+                          <option value="Сьерра-Леоне">Сьерра-Леоне</option>
+                          <option value="Таджикистан">Таджикистан</option>
+                          <option value="Таиланд">Таиланд</option>
+                          <option value="Тайвань">Тайвань</option>
+                          <option value="Танзания">Танзания</option>
+                          <option value="Того">Того</option>
+                          <option value="Токелау острова">Токелау острова</option>
+                          <option value="Тонга">Тонга</option>
+                          <option value="Тринидад и Тобаго">Тринидад и Тобаго</option>
+                          <option value="Тувалу">Тувалу</option>
+                          <option value="Тунис">Тунис</option>
+                          <option value="Туркменистан">Туркменистан</option>
+                          <option value="Туркс и Кейкос">Туркс и Кейкос</option>
+                          <option value="Турция">Турция</option>
+                          <option value="Уганда">Уганда</option>
+                          <option value="Узбекистан">Узбекистан</option>
+                          <option value="Украина">Украина</option>
+                          <option value="Уоллис и Футуна острова">Уоллис и Футуна острова</option>
+                          <option value="Уругвай">Уругвай</option>
+                          <option value="Фарерские острова">Фарерские острова</option>
+                          <option value="Фиджи">Фиджи</option>
+                          <option value="Филиппины">Филиппины</option>
+                          <option value="Финляндия">Финляндия</option>
+                          <option value="Франция">Франция</option>
+                          <option value="Французская Полинезия">Французская Полинезия</option>
+                          <option value="Хорватия">Хорватия</option>
+                          <option value="Чад">Чад</option>
+                          <option value="Черногория">Черногория</option>
+                          <option value="Чехия">Чехия</option>
+                          <option value="Чили">Чили</option>
+                          <option value="Швейцария">Швейцария</option>
+                          <option value="Швеция">Швеция</option>
+                          <option value="Шри-Ланка">Шри-Ланка</option>
+                          <option value="Эквадор">Эквадор</option>
+                          <option value="Экваториальная Гвинея">Экваториальная Гвинея</option>
+                          <option value="Эритрея">Эритрея</option>
+                          <option value="Эстония">Эстония</option>
+                          <option value="Эфиопия">Эфиопия</option>
+                          <option value="ЮАР">ЮАР</option>
+                          <option value="Южная Корея">Южная Корея</option>
+                          <option value="Южная Осетия">Южная Осетия</option>
+                          <option value="Ямайка">Ямайка</option>
+                          <option value="Япония">Япония</option>
+                        </select>
+                        <span class="bb-input__error">*Введите время</span>
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Область:</div>
+                      <div class="profile-editor__input">
+                        <select class="js-select-native" data-placeholder="Не выбрана">
+                          <option></option>
+                          <option value="Россия">Россия</option>
+                          <option value="Абхазия">Абхазия</option>
+                          <option value="Австралия">Австралия</option>
+                          <option value="Австрия">Австрия</option>
+                          <option value="Азербайджан">Азербайджан</option>
+                          <option value="Албания">Албания</option>
+                          <option value="Алжир">Алжир</option>
+                          <option value="Ангола">Ангола</option>
+                          <option value="Ангуилья">Ангуилья</option>
+                          <option value="Андорра">Андорра</option>
+                          <option value="Антигуа и Барбуда">Антигуа и Барбуда</option>
+                          <option value="Антильские острова">Антильские острова</option>
+                          <option value="Аргентина">Аргентина</option>
+                          <option value="Армения">Армения</option>
+                          <option value="Афганистан">Афганистан</option>
+                          <option value="Багамские острова">Багамские острова</option>
+                          <option value="Бангладеш">Бангладеш</option>
+                          <option value="Барбадос">Барбадос</option>
+                          <option value="Бахрейн">Бахрейн</option>
+                          <option value="Беларусь">Беларусь</option>
+                          <option value="Белиз">Белиз</option>
+                          <option value="Бельгия">Бельгия</option>
+                          <option value="Бенин">Бенин</option>
+                          <option value="Бермуды">Бермуды</option>
+                          <option value="Болгария">Болгария</option>
+                          <option value="Боливия">Боливия</option>
+                          <option value="Босния/Герцеговина">Босния/Герцеговина</option>
+                          <option value="Ботсвана">Ботсвана</option>
+                          <option value="Бразилия">Бразилия</option>
+                          <option value="Британские Виргинские о-ва">Британские Виргинские о-ва</option>
+                          <option value="Бруней">Бруней</option>
+                          <option value="Буркина Фасо">Буркина Фасо</option>
+                          <option value="Бурунди">Бурунди</option>
+                          <option value="Бутан">Бутан</option>
+                          <option value="Вануату">Вануату</option>
+                          <option value="Ватикан">Ватикан</option>
+                          <option value="Великобритания">Великобритания</option>
+                          <option value="Венгрия">Венгрия</option>
+                          <option value="Венесуэла">Венесуэла</option>
+                          <option value="Вьетнам">Вьетнам</option>
+                          <option value="Габон">Габон</option>
+                          <option value="Гаити">Гаити</option>
+                          <option value="Гайана">Гайана</option>
+                          <option value="Гамбия">Гамбия</option>
+                          <option value="Гана">Гана</option>
+                          <option value="Гваделупа">Гваделупа</option>
+                          <option value="Гватемала">Гватемала</option>
+                          <option value="Гвинея">Гвинея</option>
+                          <option value="Гвинея-Бисау">Гвинея-Бисау</option>
+                          <option value="Германия">Германия</option>
+                          <option value="Гернси остров">Гернси остров</option>
+                          <option value="Гибралтар">Гибралтар</option>
+                          <option value="Гондурас">Гондурас</option>
+                          <option value="Гонконг">Гонконг</option>
+                          <option value="Государство Палестина">Государство Палестина</option>
+                          <option value="Гренада">Гренада</option>
+                          <option value="Гренландия">Гренландия</option>
+                          <option value="Греция">Греция</option>
+                          <option value="Грузия">Грузия</option>
+                          <option value="ДР Конго">ДР Конго</option>
+                          <option value="Дания">Дания</option>
+                          <option value="Джерси остров">Джерси остров</option>
+                          <option value="Джибути">Джибути</option>
+                          <option value="Доминиканская Республика">Доминиканская Республика</option>
+                          <option value="Египет">Египет</option>
+                          <option value="Замбия">Замбия</option>
+                          <option value="Западная Сахара">Западная Сахара</option>
+                          <option value="Зимбабве">Зимбабве</option>
+                          <option value="Израиль">Израиль</option>
+                          <option value="Индия">Индия</option>
+                          <option value="Индонезия">Индонезия</option>
+                          <option value="Иордания">Иордания</option>
+                          <option value="Ирак">Ирак</option>
+                          <option value="Иран">Иран</option>
+                          <option value="Ирландия">Ирландия</option>
+                          <option value="Исландия">Исландия</option>
+                          <option value="Испания">Испания</option>
+                          <option value="Италия">Италия</option>
+                          <option value="Йемен">Йемен</option>
+                          <option value="Кабо-Верде">Кабо-Верде</option>
+                          <option value="Казахстан">Казахстан</option>
+                          <option value="Камбоджа">Камбоджа</option>
+                          <option value="Камерун">Камерун</option>
+                          <option value="Канада">Канада</option>
+                          <option value="Катар">Катар</option>
+                          <option value="Кения">Кения</option>
+                          <option value="Кипр">Кипр</option>
+                          <option value="Китай">Китай</option>
+                          <option value="Колумбия">Колумбия</option>
+                          <option value="Коста-Рика">Коста-Рика</option>
+                          <option value="Кот-д&#39;Ивуар">Кот-д&#39;Ивуар</option>
+                          <option value="Куба">Куба</option>
+                          <option value="Кувейт">Кувейт</option>
+                          <option value="Кука острова">Кука острова</option>
+                          <option value="Кыргызстан">Кыргызстан</option>
+                          <option value="Лаос">Лаос</option>
+                          <option value="Латвия">Латвия</option>
+                          <option value="Лесото">Лесото</option>
+                          <option value="Либерия">Либерия</option>
+                          <option value="Ливан">Ливан</option>
+                          <option value="Ливия">Ливия</option>
+                          <option value="Литва">Литва</option>
+                          <option value="Лихтенштейн">Лихтенштейн</option>
+                          <option value="Люксембург">Люксембург</option>
+                          <option value="Маврикий">Маврикий</option>
+                          <option value="Мавритания">Мавритания</option>
+                          <option value="Мадагаскар">Мадагаскар</option>
+                          <option value="Македония">Македония</option>
+                          <option value="Малайзия">Малайзия</option>
+                          <option value="Мали">Мали</option>
+                          <option value="Мальдивские острова">Мальдивские острова</option>
+                          <option value="Мальта">Мальта</option>
+                          <option value="Марокко">Марокко</option>
+                          <option value="Мексика">Мексика</option>
+                          <option value="Мозамбик">Мозамбик</option>
+                          <option value="Молдова">Молдова</option>
+                          <option value="Монако">Монако</option>
+                          <option value="Монголия">Монголия</option>
+                          <option value="Мьянма (Бирма)">Мьянма (Бирма)</option>
+                          <option value="Мэн о-в">Мэн о-в</option>
+                          <option value="Намибия">Намибия</option>
+                          <option value="Непал">Непал</option>
+                          <option value="Нигер">Нигер</option>
+                          <option value="Нигерия">Нигерия</option>
+                          <option value="Нидерланды (Голландия)">Нидерланды (Голландия)</option>
+                          <option value="Никарагуа">Никарагуа</option>
+                          <option value="Новая Зеландия">Новая Зеландия</option>
+                          <option value="Новая Каледония">Новая Каледония</option>
+                          <option value="Норвегия">Норвегия</option>
+                          <option value="О.А.Э.">О.А.Э.</option>
+                          <option value="Оман">Оман</option>
+                          <option value="Пакистан">Пакистан</option>
+                          <option value="Палау">Палау</option>
+                          <option value="Панама">Панама</option>
+                          <option value="Папуа Новая Гвинея">Папуа Новая Гвинея</option>
+                          <option value="Парагвай">Парагвай</option>
+                          <option value="Перу">Перу</option>
+                          <option value="Питкэрн остров">Питкэрн остров</option>
+                          <option value="Польша">Польша</option>
+                          <option value="Португалия">Португалия</option>
+                          <option value="Пуэрто Рико">Пуэрто Рико</option>
+                          <option value="Республика Конго">Республика Конго</option>
+                          <option value="Реюньон">Реюньон</option>
+                          <option value="Руанда">Руанда</option>
+                          <option value="Румыния">Румыния</option>
+                          <option value="США">США</option>
+                          <option value="Сальвадор">Сальвадор</option>
+                          <option value="Самоа">Самоа</option>
+                          <option value="Сан-Марино">Сан-Марино</option>
+                          <option value="Сан-Томе и Принсипи">Сан-Томе и Принсипи</option>
+                          <option value="Саудовская Аравия">Саудовская Аравия</option>
+                          <option value="Свазиленд">Свазиленд</option>
+                          <option value="Святая Люсия">Святая Люсия</option>
+                          <option value="Северная Корея">Северная Корея</option>
+                          <option value="Сейшеллы">Сейшеллы</option>
+                          <option value="Сен-Пьер и Микелон">Сен-Пьер и Микелон</option>
+                          <option value="Сенегал">Сенегал</option>
+                          <option value="Сент Китс и Невис">Сент Китс и Невис</option>
+                          <option value="Сент-Винсент и Гренадины">Сент-Винсент и Гренадины</option>
+                          <option value="Сербия">Сербия</option>
+                          <option value="Сингапур">Сингапур</option>
+                          <option value="Сирия">Сирия</option>
+                          <option value="Словакия">Словакия</option>
+                          <option value="Словения">Словения</option>
+                          <option value="Соломоновы острова">Соломоновы острова</option>
+                          <option value="Сомали">Сомали</option>
+                          <option value="Судан">Судан</option>
+                          <option value="Суринам">Суринам</option>
+                          <option value="Сьерра-Леоне">Сьерра-Леоне</option>
+                          <option value="Таджикистан">Таджикистан</option>
+                          <option value="Таиланд">Таиланд</option>
+                          <option value="Тайвань">Тайвань</option>
+                          <option value="Танзания">Танзания</option>
+                          <option value="Того">Того</option>
+                          <option value="Токелау острова">Токелау острова</option>
+                          <option value="Тонга">Тонга</option>
+                          <option value="Тринидад и Тобаго">Тринидад и Тобаго</option>
+                          <option value="Тувалу">Тувалу</option>
+                          <option value="Тунис">Тунис</option>
+                          <option value="Туркменистан">Туркменистан</option>
+                          <option value="Туркс и Кейкос">Туркс и Кейкос</option>
+                          <option value="Турция">Турция</option>
+                          <option value="Уганда">Уганда</option>
+                          <option value="Узбекистан">Узбекистан</option>
+                          <option value="Украина">Украина</option>
+                          <option value="Уоллис и Футуна острова">Уоллис и Футуна острова</option>
+                          <option value="Уругвай">Уругвай</option>
+                          <option value="Фарерские острова">Фарерские острова</option>
+                          <option value="Фиджи">Фиджи</option>
+                          <option value="Филиппины">Филиппины</option>
+                          <option value="Финляндия">Финляндия</option>
+                          <option value="Франция">Франция</option>
+                          <option value="Французская Полинезия">Французская Полинезия</option>
+                          <option value="Хорватия">Хорватия</option>
+                          <option value="Чад">Чад</option>
+                          <option value="Черногория">Черногория</option>
+                          <option value="Чехия">Чехия</option>
+                          <option value="Чили">Чили</option>
+                          <option value="Швейцария">Швейцария</option>
+                          <option value="Швеция">Швеция</option>
+                          <option value="Шри-Ланка">Шри-Ланка</option>
+                          <option value="Эквадор">Эквадор</option>
+                          <option value="Экваториальная Гвинея">Экваториальная Гвинея</option>
+                          <option value="Эритрея">Эритрея</option>
+                          <option value="Эстония">Эстония</option>
+                          <option value="Эфиопия">Эфиопия</option>
+                          <option value="ЮАР">ЮАР</option>
+                          <option value="Южная Корея">Южная Корея</option>
+                          <option value="Южная Осетия">Южная Осетия</option>
+                          <option value="Ямайка">Ямайка</option>
+                          <option value="Япония">Япония</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Город:</div>
+                      <div class="profile-editor__input">
+                        <select class="js-select-native" data-placeholder="Не выбрана">
+                          <option></option>
+                          <option value="Москва">Москва</option>
+                          <option value="Санкт-Петербург">Санкт-Петербург</option>
+                          <option value="Саратов">Саратов</option>
+                          <option value="Балаково">Балаково</option>
+                          <option value="Самара">Самара</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Район:</div>
+                      <div class="profile-editor__input is-info">
+                        <select class="js-select-native" data-placeholder="Не выбрана">
+                          <option></option>
+                          <option value="Москва">Москва</option>
+                          <option value="Санкт-Петербург">Санкт-Петербург</option>
+                          <option value="Саратов">Саратов</option>
+                          <option value="Балаково">Балаково</option>
+                          <option value="Самара">Самара</option>
+                        </select>
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip ">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <div class="bb-input-tip__text">*Блок с информацией</div>
+                        </div>
+                        <!-- begin tip -->
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Станция метро:</div>
+                      <div class="profile-editor__input">
+                        <select class="js-select-native" data-placeholder="Не выбрана">
+                          <option></option>
+                          <option value="Москва">Москва</option>
+                          <option value="Санкт-Петербург">Санкт-Петербург</option>
+                          <option value="Саратов">Саратов</option>
+                          <option value="Балаково">Балаково</option>
+                          <option value="Самара">Самара</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Улица</div>
+                      <div class="profile-editor__input is-error">
+                        <input type="text">
+                        <!-- <span class="profile-editor__error">*Какая-то ошибочка</span> -->
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
+                        </div>
+                        <!-- end tip -->
+                      </div>
+                    </div>
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Дом</div>
+                      <div class="profile-editor__input ">
+                        <input type="text">
+                        <!-- <span class="profile-editor__error">*Какая-то ошибочка</span> -->
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
+                        </div>
+                        <!-- end tip -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-editor__map">
+                    <div id="cabinet-map"></div>
+                  </div>
+                  <div class="profile-editor__inner is-hidden">
+                    <span class="profile-editor__title profile-editor__title--small">Дополнительные адреса</span>
+                    <!-- begin adreses -->
+                    <div class="adreses">
+                      <ul class="adreses__list">
+                        <li class="adreses__item">
+                          <a href="#" class="adreses__link"> г.Балаково, ул.Промышленная, д.35А, каб 11 </a>
+                          <a href="#" class="js-delete-add-address" title="Удалить адресс">
+                            <svg class="icon icon-close adreses__icon">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="adreses__item">
+                          <a href="#" class="adreses__link"> г.Балаково, ул.Промышленная, д.35А, каб 11 </a>
+                          <a href="#" class="js-delete-add-address" title="Удалить адресс">
+                            <svg class="icon icon-close adreses__icon">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="adreses__item">
+                          <a href="#" class="adreses__link"> г.Балаково, ул.Промышленная, д.35А, каб 11 </a>
+                          <a href="#" class="js-delete-add-address" title="Удалить адресс">
+                            <svg class="icon icon-close adreses__icon">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end adreses -->
+                  </div>
+                  <div class="profile-editor__footer">
+                    <button class="btn btn-gray btn-animate is-ready" data-push data-push-delay="2500" data-push-message-error="Неправильный пароль или e-mail" data-push-message-success="Хорошего дня!" data-push-status="success">
+                      <span class="btn__title">Сохранить</span>
+                      <span class="btn__error">*Какая-то ошибочка</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- end profile-editor__form -->
+              </div>
+              <div id="step-2">
+                <!-- begin profile-editor__form -->
+                <div class="profile-editor__form">
+                  <div class="profile-editor__inner">
+                    <!-- begin Studio name -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Название студии</div>
+                      <div class="profile-editor__input is-error">
+                        <input type="text">
+                        <!-- <span class="profile-editor__error">*Какая-то ошибочка</span> -->
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
+                        </div>
+                        <!-- end tip -->
+                      </div>
+                    </div>
+                    <!-- end Studio name -->
+                    <!-- begin about -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label">О нас:</div>
+                      <div class="profile-editor__input is-info">
+                        <textarea></textarea>
+                        <span class="counter-text counter-text--textarea js-countForTextarea">500</span>
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip ">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <div class="bb-input-tip__text">*Блок с информацией</div>
+                        </div>
+                        <!-- begin tip -->
+                      </div>
+                    </div>
+                    <!-- end about -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Цвет салона:</div>
+                      <div class="profile-editor__input">
+                        <div class="profile-editor__select profile-editor__select--color select-color">
+                          <select class="js-select--color">
+                            <option data-color="#fe0061" value="#fe0061"></option>
+                            <option data-color="#ab00b6" value="#ab00b6"></option>
+                            <option data-color="#3c4ebc" value="#3c4ebc"></option>
+                            <option data-color="#0096fb" value="#0096fb"></option>
+                            <option data-color="#00bfd8" value="#00bfd8"></option>
+                            <option data-color="#009988" value="#009988"></option>
+                            <option data-color="#00b341" value="#00b341"></option>
+                            <option data-color="#c9df00" value="#c9df00"></option>
+                            <option data-color="#ffec00" value="#ffec00"></option>
+                            <option data-color="#ff9300" value="#ff9300"></option>
+                          </select>
+                          <span class="profile-editor__error">*Цвет уже занят</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- begin born date -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Дата рождения:</div>
+                      <div class="profile-editor__input">
+                        <div class="bb-input-born">
+                          <div class="bb-input-born__select">
+                            <select class="js-select-born js-select-born--clear" data-placeholder="День">
+                              <option></option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                            </select>
+                          </div>
+                          <div class="bb-input-born__select bb-input-born__select--month">
+                            <select class="js-select-born js-select-born--clear" data-placeholder="Месяц">
+                              <option></option>
+                              <option value="Январь">Январь</option>
+                              <option value="Февраль">Февраль</option>
+                              <option value="Март">Март</option>
+                              <option value="Апрель">Апрель</option>
+                              <option value="Май">Май</option>
+                              <option value="Июнь">Июнь</option>
+                              <option value="Июль">Июль</option>
+                              <option value="Август">Август</option>
+                              <option value="Сентябрь">Сентябрь</option>
+                              <option value="Октябрь">Октябрь</option>
+                              <option value="Ноябрь">Ноябрь</option>
+                              <option value="Декабрь">Декабрь</option>
+                            </select>
+                          </div>
+                          <div class="bb-input-born__select bb-input-born__select--year">
+                            <select class="js-select-born js-select-born--clear" data-placeholder="Год" data-born="year">
+                              <option></option>
+                              <option value="1988">1988</option>
+                              <option value="1989">1989</option>
+                              <option value="1990">1990</option>
+                              <option value="1991">1991</option>
+                              <option value="1992">1992</option>
+                              <option value="1993">1993</option>
+                              <option value="1194">1194</option>
+                              <option value="1995">1995</option>
+                              <option value="1996">1996</option>
+                              <option value="1997">1997</option>
+                              <option value="1998">1998</option>
+                              <option value="1999">1999</option>
+                              <option value="2000">2000</option>
+                              <option value="2001">2001</option>
+                              <option value="2002">2002</option>
+                              <option value="2003">2003</option>
+                            </select>
+                          </div>
+                          <button class="btn btn-link btn-link-secondary bb-input-born__btn js-set-year">Выбрать год</button>
+                          <span class="bb-input__error">*Какая-то ошибочка</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end born date -->
+                    <!-- begin gender -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label">Пол:</div>
+                      <div class="profile-editor__input">
+                        <label class="bb-checkbox bb-checkbox--radio bb-checkbox--transform">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">женский</span>
+                        </label>
+                        <label class="bb-checkbox bb-checkbox--radio bb-checkbox--transform">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">мужской</span>
+                        </label>
+                        <span class="profile-editor__error">*Какая-то ошибочка</span>
+                      </div>
+                    </div>
+                    <!-- end gender -->
+                    <!-- begin work place -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label">Место работы:</div>
+                      <div class="profile-editor__input">
+                        <label class="bb-checkbox  bb-checkbox--transform profile-editor__checkbox">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">в салоне / студии</span>
+                        </label>
+                        <label class="bb-checkbox profile-editor__checkbox bb-checkbox--transform">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">на дому</span>
+                        </label>
+                        <label class="bb-checkbox  bb-checkbox--transform profile-editor__checkbox">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">могу выехать к клиенту</span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- end work place -->
+                    <!-- begin work experience -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Стаж работы с:</div>
+                      <div class="profile-editor__input">
+                        <div class="profile-editor__select profile-editor__select--year">
+                          <select class="js-select-native" data-placeholder="Год">
+                            <option></option>
+                            <option value="1988">1988</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1194">1194</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end work experience -->
+                    <!-- begin materials -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">Используемые материалы:</div>
+                      <div class="profile-editor__input">
+                        <div class="profile-editor__select profile-editor__select--materials">
+                          <select class="js-select--multiple" multiple="multiple" data-placeholder="Выберите используемые вами материалы">
+                            <option></option>
+                            <option value="Aravia Professional">Aravia Professional</option>
+                            <option value="Gloria">Gloria</option>
+                            <option value="TNL Professional">TNL Professional</option>
+                            <option value="Orly">Orly</option>
+                            <option value="Opi">Opi</option>
+                            <option value="Сanni">Сanni</option>
+                            <option value="Gloria">Gloria</option>
+                            <option value="TNL Professional">TNL Professional</option>
+                            <option value="Orly">Orly</option>
+                            <option value="Opi">Opi</option>
+                            <option value="Сanni">Сanni</option>
+                            <option value="Gloria">Gloria</option>
+                            <option value="TNL Professional">TNL Professional</option>
+                            <option value="Orly">Orly</option>
+                            <option value="Opi">Opi</option>
+                            <option value="Сanni">Сanni</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end materials -->
+                    <!-- begin mode of aperation -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-9">Режим работы:</div>
+                      <div class="profile-editor__input">
+                        <div class="working-hours__wrap js-list">
+                          <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox">
+                            <input type="checkbox">
+                            <span class="bb-checkbox__box"></span>
+                            <span class="bb-checkbox__title">Свободный график</span>
+                          </label>
+                          <!-- begin working-hours -->
+                          <div class="working-hours js-list-toggle">
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Пн</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Вт</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Ср</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Чт</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Пт</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Сб</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="working-hours__item">
+                              <div class="working-hours__day">
+                                <label class="bb-checkbox bb-checkbox--transform">
+                                  <input type="checkbox">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">Вс</span>
+                                </label>
+                              </div>
+                              <div class="working-hours__time">
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                                <span class="working-hours__devider"> — </span>
+                                <div class="working-hours__time-item profile-editor__select">
+                                  <select class="js-select-native">
+                                    <option value="20 мин">20 мин</option>
+                                    <option value="30 мин">30 мин</option>
+                                    <option value="40 мин">40 мин</option>
+                                    <option value="50 мин">50 мин</option>
+                                    <option value="1 час">1 час</option>
+                                    <option value="1 час 10 мин">1 час 10 мин</option>
+                                    <option value="1 час 20 мин">1 час 20 мин</option>
+                                    <option value="1 час 30 мин">1 час 30 мин</option>
+                                    <option value="1 час 40 мин">1 час 40 мин</option>
+                                    <option value="1 час 50 мин">1 час 50 мин</option>
+                                    <option value="11 час 10 мин">11 час 10 мин</option>
+                                    <option value="11 час 20 мин">11 час 20 мин</option>
+                                    <option value="11 час 30 мин">11 час 30 мин</option>
+                                    <option value="11 час 40 мин">11 час 40 мин</option>
+                                    <option value="11 час 50 мин">11 час 50 мин</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end working-hours -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end mode of aperation -->
+                    <!-- begin phone -->
+                    <div class="profile-editor__item profile-editor__item--column">
+                      <div class="profile-editor__item-inner">
+                        <div class="profile-editor__label pt-10">Телефон:</div>
+                        <div class="profile-editor__input profile-editor__input_confirm is-invalid">
+                          <input class="js-phone-mask" type="tel">
+                          <!-- <span class="profile-editor__attention profile-editor__attention--invalid ">Телефон не подтвержден. Вам доступен не весь функционал сайта</span> -->
+                          <span class="profile-editor__attention profile-editor__attention--success ">Номер телефона подтвержден</span>
+                          <!-- begin tip -->
+                          <div class="bb-input-tip js-bb-input-tip ">
+                            <span class="bb-input-tip__arrow-up"></span>
+                            <i class="fal fa-times"></i>
+                            <div class="bb-input-tip__text">Телефон не подтвержден. Вам доступен не весь функционал сайта</div>
+                          </div>
+                          <!-- begin tip -->
+                        </div>
+                      </div>
+                      <div class="profile-editor__confirm confirm js-confirm">
+                        <div class="phone-confirm__repeat">
+                          <span class="button-link confirm__link js-timer--repeat">отправить SMS</span>
+                        </div>
+                        <div class="confirm__timer" style="display: none;"> Повторная отправка возможна через
+                          <span class="js-timer" data-timer="8"></span> сек. </div>
+                        <div class="confirm__field" style="display: none;">
+                          <div class="bb-input">
+                            <input type="num" class="bb-input__input phone-confirm__input" placeholder="Sms код"> </div>
+                          <button class="button-animate button-animate--gray js-btn-animate confirm__btn"> Ок
+                            <span class="button-animate__hover"></span>
+                          </button>
+                          <span class="confirm__error bb-input__error">*Какая-то ошибочка вышла</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end phone -->
+                    <!-- begin email -->
+                    <div class="profile-editor__item">
+                      <div class="profile-editor__label pt-10">E-mail</div>
+                      <div class="profile-editor__input is-invalid">
+                        <input type="text">
+                        <!-- <span class="profile-editor__error">*Какая-то ошибочка</span> -->
+                        <!-- begin tip -->
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <span class="bb-input-tip__arrow-up"></span>
+                          <i class="fal fa-times"></i>
+                          <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
+                        </div>
+                        <!-- end tip -->
+                      </div>
+                    </div>
+                    <!-- end email -->
+                  </div>
+                  <div class="profile-editor__footer">
+                    <button class="btn btn-gray btn-animate is-ready" data-push data-push-delay="2500" data-push-message-error="Неправильный пароль или e-mail" data-push-message-success="Хорошего дня!" data-push-status="success">
+                      <span class="btn__title">Сохранить</span>
+                      <span class="btn__error">*Какая-то ошибочка</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- end profile-editor__form -->
+              </div>
+              <div id="step-3">
+                <div class="button-box">
+                  <a class="btn btn-link" href="#">
+                    <i class="fal fa-long-arrow-left"></i> &nbsp; Назад к альбому </a>
+                  <label class="btn btn-link btn--last is-hidden"> + Добавить фото
+                    <input type="file"> </label>
+                </div>
+                <!-- begin profile-editor__form -->
+                <div class="profile-editor__form">
+                  <div class="profile-editor__body">
+                    <div class="profile-editor__inner">
+                      <!-- begin albums -->
+                      <div class="album__wrap">
+                        <div class="album__inner">
+                          <div class="album-item ">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/examples/studio/works/1.jpeg" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="album-item ">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/examples/studio/works/1.jpeg" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="album-item ">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/examples/studio/works/1.jpeg" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="album-item ">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/examples/studio/works/1.jpeg" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="album-item ">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/examples/studio/works/1.jpeg" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="album-item">
+                            <div class="album-item__inner">
+                              <div class="album-item__img">
+                                <img src="img/general/empty.png" alt="albom name">
+                                <!-- <button class="btn btn-white album-item__btn--edit">
+						<i class="fal fa-edit"></i>
+						Редактировать
+					</button>
+
+					<button class="album-item__btn--dell" data-target="#delete" data-toggle="modal" title="удалить альбом">
+						<i class="fal fa-trash-alt"></i>
+					</button> -->
+                              </div>
+                              <div class="album-item__desc">
+                                <h5 class="h5 album-item__title">Класический маникюр</h5>
+                                <div class="album-item__edit">Редактировался:
+                                  <span>23.07.18г.</span>
+                                </div>
+                                <div class="album-item__info">
+                                  <div class="album-item__preview">
+                                    <ul class="preview__list preview-list">
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/1.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/2.jpeg');"></li>
+                                      <li class="preview-list__item" style="background-image: url('img/examples/studio/works/preview/3.jpeg');"></li>
+                                    </ul>
+                                  </div>
+                                  <div class="album-item__count">8</div>
+                                </div>
+                                <div class="info-block info-block--more info-block--more album-item__info-block bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+                                  <div class="bb-dropdown__list">
+                                    <ul class="info-block__list">
+                                      <li class="info-block__item sm-only">
+                                        <label class="info-block__link"> Добавить фото
+                                          <input type="file"> </label>
+                                      </li>
+                                      <li class="info-block__item" onclick="console.log('Редактировать')">
+                                        <a class="info-block__link" href="#">
+                                          <i class="fal fa-edit info-block__icon"></i> Редактировать </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link" href="crm-studio-network.html">
+                                          <i class="fal fa-eye-slash info-block__icon"></i> Скрыть </a>
+                                      </li>
+                                      <li class="info-block__item">
+                                        <a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+                                          <i class="fal fa-trash-alt info-block__icon"></i> Удалить </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="empty album__empty" style="display: none;">
+                          <img class="empty__icon mb-20" src="img/icons/svg/image.svg" alt="Календарь">
+                          <span class="empty__title">У Вас нет созданных альбомов</span>
+                          <button class="btn btn-gray mt-30">Создать альбом</button>
+                        </div>
+                        <div class="bb-upload" style="display: none;">
+                          <ul class="bb-upload__list">
+                            <li class="bb-upload__item">
+                              <a class="bb-upload__link" data-fancybox="image" href="img/examples/user/works/work-blahh/1.jpg">
+                                <img class="bb-upload__img" src="img/examples/user/works/work-blahh/small/1.jpg" alt> </a>
+                              <div class="bb-upload__overlay">
+                                <a class="bb-upload__btn bb-upload__btn--wide bb-upload__btn--first">Сделать главной</a>
+                                <a class="fal fa-undo bb-upload__btn" title="повернуть влево"></a>
+                                <a class="fal fa-redo bb-upload__btn" title="повернуть вправо"></a>
+                                <a class="fal fa-trash-alt bb-upload__btn" data-toggle="modal" href="#m-album--dell" title="удалить"></a>
+                              </div>
+                            </li>
+                            <li class="bb-upload__item">
+                              <a class="bb-upload__link" data-fancybox="image" href="img/examples/user/works/work-blahh/2.jpg">
+                                <img class="bb-upload__img" src="img/examples/user/works/work-blahh/small/2.jpg" alt> </a>
+                              <div class="bb-upload__overlay">
+                                <a class="bb-upload__btn bb-upload__btn--wide bb-upload__btn--first">Сделать главной</a>
+                                <a class="fal fa-undo bb-upload__btn" title="повернуть влево"></a>
+                                <a class="fal fa-redo bb-upload__btn" title="повернуть вправо"></a>
+                                <a class="fal fa-trash-alt bb-upload__btn" data-toggle="modal" href="#m-album--dell" title="удалить"></a>
+                              </div>
+                            </li>
+                            <li class="bb-upload__item">
+                              <a class="bb-upload__link" data-fancybox="image" href="img/examples/user/works/work-blahh/3.jpg">
+                                <img class="bb-upload__img" src="img/examples/user/works/work-blahh/small/3.jpg" alt> </a>
+                              <div class="bb-upload__overlay">
+                                <a class="bb-upload__btn bb-upload__btn--wide bb-upload__btn--first">Сделать главной</a>
+                                <a class="fal fa-undo bb-upload__btn" title="повернуть влево"></a>
+                                <a class="fal fa-redo bb-upload__btn" title="повернуть вправо"></a>
+                                <a class="fal fa-trash-alt bb-upload__btn" data-toggle="modal" href="#m-album--dell" title="удалить"></a>
+                              </div>
+                            </li>
+                            <li class="bb-upload__item">
+                              <a class="bb-upload__link" data-fancybox="image" href="img/examples/user/works/work-blahh/4.jpg">
+                                <img class="bb-upload__img" src="img/examples/user/works/work-blahh/small/4.jpg" alt> </a>
+                              <div class="bb-upload__overlay">
+                                <a class="bb-upload__btn bb-upload__btn--wide bb-upload__btn--first">Сделать главной</a>
+                                <a class="fal fa-undo bb-upload__btn" title="повернуть влево"></a>
+                                <a class="fal fa-redo bb-upload__btn" title="повернуть вправо"></a>
+                                <a class="fal fa-trash-alt bb-upload__btn" data-toggle="modal" href="#m-album--dell" title="удалить"></a>
+                              </div>
+                            </li>
+                            <li class="bb-upload__item">
+                              <a class="bb-upload__link" data-fancybox="image" href="img/examples/user/works/work-blahh/5.jpg">
+                                <img class="bb-upload__img" src="img/examples/user/works/work-blahh/small/5.jpg" alt> </a>
+                              <div class="bb-upload__overlay">
+                                <a class="bb-upload__btn bb-upload__btn--wide bb-upload__btn--first">Сделать главной</a>
+                                <a class="fal fa-undo bb-upload__btn" title="повернуть влево"></a>
+                                <a class="fal fa-redo bb-upload__btn" title="повернуть вправо"></a>
+                                <a class="fal fa-trash-alt bb-upload__btn" data-toggle="modal" href="#m-album--dell" title="удалить"></a>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="empty bb-upload__empty" style="display: none;">
+                            <div class="empty__block">
+                              <p class="empty__text">Добавьте фотографии своих работ</p>
+                              <svg class="icon icon-image empty__icon">
+                                <use xlink:href="img/sprite.svg#image"></use>
+                              </svg>
+                            </div>
+                            <label class="btn btn-default empty__btn"> + Добавить фото
+                              <input type="file"> </label>
+                          </div>
+                          <div class="loader__wrap bb-upload__loader">
+                            <div class="loader--scroll"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end albums -->
+                      <div class="empty empty--centre bb-upload__empty is-hidden">
+                        <div class="empty__block">
+                          <p class="empty__text">Добавьте фотографии своих работ</p>
+                          <svg class="icon icon-image empty__icon">
+                            <use xlink:href="img/sprite.svg#image"></use>
+                          </svg>
+                        </div>
+                        <label class="btn btn-default empty__btn"> + Добавить фото
+                          <input type="file"> </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-editor__footer">
+                    <button class="btn btn-gray btn-animate is-ready" data-push data-push-delay="2500" data-push-message-error="Неправильный пароль или e-mail" data-push-message-success="Хорошего дня!" data-push-status="success">
+                      <span class="btn__title">Сохранить</span>
+                      <span class="btn__error">*Какая-то ошибочка</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- end profile-editor__form -->
+                <div class="btn-floating js-btn-floating btn-fixed" data-position="bottom right">
+                  <a class="btn-icon btn-icon--large bg--default btn-floating__link" data-btn-tooltip="Добавить фото" href="javascript:void(0);">
+                    <svg class="icon icon-plus--bold btn-floating__icon icon--first">
+                      <use xlink:href="img/sprite.svg#plus--bold"></use>
+                    </svg>
+                    <svg class="icon icon-photo-camera btn-floating__icon">
+                      <use xlink:href="img/sprite.svg#photo-camera"></use>
+                    </svg>
+                  </a>
+                  <ul class="btn-floating__list">
+                    <li class="btn-floating__item">
+                      <a class="btn-icon btn-icon--large bg--default btn-floating__link" data-btn-tooltip="Новый альбом" data-toggle="modal" href="#m-album--create">
+                        <svg class="icon icon-photo-album btn-floating__icon">
+                          <use xlink:href="img/sprite.svg#photo-album"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="preloader--cabinet">
+            <div class="preloader__icon"></div>
+          </div>
+        </main>
+        <!-- end cabinet -->
+      </div>
+      <!-- end wrapper__inner -->
+    </div>
+    <!-- end wrapper -->
+    <!-- begin mobile-block-->
+    <!-- end mobile-block -->
+    <!-- begin popups -->
+    <div class="popups">
+      <!-- begin disable-category -->
+      <div class="modal fade disable-category" id="disable-category">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title">Отключить категорию ?</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <p class="disable-category__text">При отключениее категории
+                <strong class="disable-category__data-title"></strong>, все услуги данной категории будут отключены.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Отключить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end disable-category -->
+      <!-- begin choice-of-role -->
+      <div class="modal fade modal-choice" id="choice-of-role">
+        <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title">Вы мастер или салон ?</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <div class="bb-checkbox__wrap">
+                <label class="bb-checkbox bb-checkbox--radio bb-checkbox--radio modal-choice__checkbox">
+                  <input name="choice" type="radio">
+                  <span class="bb-checkbox__box"></span>
+                  <span class="bb-checkbox__title">Мастер</span>
+                </label>
+                <label class="bb-checkbox bb-checkbox--radio bb-checkbox--radio modal-choice__checkbox">
+                  <input name="choice" type="radio">
+                  <span class="bb-checkbox__box"></span>
+                  <span class="bb-checkbox__title">Салон</span>
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default btn--big">Подтвердить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end choice-of-role -->
+      <!-- begin dell -->
+      <div class="modal fade dell" id="dell">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Удалить / Отключить Что-То ?</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <p class="dell__text">Вы уверены, что хотите удалить / отключить Что-То ?</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Отключить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end dell -->
+      <!-- begin m-album--create -->
+      <div class="modal fade m-album" id="m-album--create">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title">Создать альбом</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <div class="m-album__item">
+                <span class="m-album__title">Категория и услуга</span>
+                <div class="m-album__inner">
+                  <div class="bb-input is-invalid">
+                    <select class="m-album__select js-select">
+                      <option value="Маникюр">Маникюр</option>
+                      <option value="Педикюр">Педикюр</option>
+                      <option value="Дизайн ногтей">Дизайн ногтей</option>
+                      <option value="Наращивание ногтей">Наращивание ногтей</option>
+                      <option value="Макияж">Макияж</option>
+                      <option value="Коррекция бровей">Коррекция бровей</option>
+                      <option value="Наращивание ресниц">Наращивание ресниц</option>
+                      <option value="Стрижка">Стрижка</option>
+                      <option value="Укладка">Укладка</option>
+                      <option value="Прически">Прически</option>
+                      <option value="Эпиляция">Эпиляция</option>
+                      <option value="Косметология">Косметология</option>
+                      <option value="Пирсинг">Пирсинг</option>
+                      <option value="Фитнес">Фитнес</option>
+                      <option value="Татуировка">Татуировка</option>
+                    </select>
+                    <span class="bb-input__error">*Какая-то ошибочка</span>
+                  </div>
+                  <div class="bb-input">
+                    <select class="m-album__select js-select">
+                      <option value="Классический маникюр">Классический маникюр</option>
+                      <option value="Аппаратный маникюр">Аппаратный маникюр</option>
+                      <option value="Европейский маникюр">Европейский маникюр</option>
+                      <option value="Горячий маникюр">Горячий маникюр</option>
+                      <option value="SPA - маникюр">SPA - маникюр</option>
+                      <option value="Мужской маникюр">Мужской маникюр</option>
+                      <option value="Парафинотерапия">Парафинотерапия</option>
+                    </select>
+                    <span class="bb-input__error">*Какая-то ошибочка</span>
+                  </div>
+                </div>
+              </div>
+              <div class="m-album__item">
+                <span class="m-album__title">Описание</span>
+                <textarea class="m-album__text"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Создать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end m-album--create -->
+      <!-- begin delete -->
+      <div class="modal fade delete" id="delete">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Удаление альбома</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <p>Вы уверены, что хотите удалить альбом?</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Удалить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end delete -->
+      <!-- begin triumph-registration -->
+      <div class="modal fade triumph" id="triumph-registration">
+        <div class="modal-dialog modal-dialog--triumph">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="triumph__inner">
+                <h3 class="triumph__title sm-hide">Бонусы для вашего Instagram</h3>
+                <div class="bb-slider bb-slider--triumph js-bb-slider--triumph">
+                  <div class="bb-slider__slides">
+                    <div class="bb-slider__slide bb-slider__slide--left">
+                      <h3 class="triumph__title sm-only">Бонусы для вашего Instagram</h3>
+                      <div class="triumph__img">
+                        <img src="img/general/mockups/mockup-phone-1.png" alt="mockup"> </div>
+                      <span class="triumph__subtitle">Личный мини-сайт</span>
+                      <div class="triumph__desc">Связь через WhatsApp, Viber и ВК. Услуги, цены и время работы мастера</div>
+                      <a class="btn btn-default triumph__btn" href="#">Получить мини-сайт</a>
+                      <div class="triumph__footnote sm-only js-bb-slider-btn--next">далее</div>
+                    </div>
+                    <div class="bb-slider__slide bb-slider__slide--right">
+                      <h3 class="triumph__title sm-only">Бонусы для вашего Instagram</h3>
+                      <div class="triumph__img">
+                        <img src="img/general/triumph/registration/bonus.png" alt="mockup"> </div>
+                      <span class="triumph__subtitle">Иконки beauty-мастера</span>
+                      <div class="triumph__desc">Бесплатный пакет уникальных иконок для вашей страницы </div>
+                      <a class="btn btn-default triumph__btn" href="#">Скачать иконки</a>
+                      <div class="triumph__footnote sm-only js-bb-slider-btn--next">завершить</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end triumph-registration -->
+      <!-- begin studio-triumph -->
+      <div class="modal fade triumph" id="studio-triumph">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="triumph__title">Студия успешно создана</h5>
+              <div class="devider devider--icon devider--green">
+                <!-- <i class="fal fa-check-circle devider__icon"></i> -->
+                <svg class="icon icon-check devider__icon">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </div>
+              <div class="triumph__text">Осталось добавить фото работ, чтобы новые клиенты нашли вашу студию</div>
+            </div>
+            <div class="modal-footer modal-footer--custom">
+              <button class="btn btn-outline-default triumph__btn" data-dismiss="modal" aria-label="Close">Пропустить</button>
+              <button class="btn btn-default triumph__btn">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end studio-triumph -->
+      <!-- begin studio-control -->
+      <div class="modal fade studio-control" id="studio-control">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title">Изменение системы управления</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <p>Подключить ручную систему управления студиями?</p>
+              <p>Вы сможете устанавливать услуги и цены отдельно для каждой студии.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end studio-control -->
+      <!-- begin add-master -->
+      <div class="modal fade add" id="add-master">
+        <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="modal-close modal-close--dark" data-dismiss="modal" aria-label="Close"></button>
+              <!-- begin user -->
+              <div class="user add__user">
+                <div class="user__avatar">
+                  <div class="user__img">
+                    <img src="img/examples/user/daniela-avatar.jpg" alt="noavatar">
+                    <!-- <img src="img/examples/user/noavatar.jpg" alt="noavatar"> -->
+                  </div>
+                  <!-- <a class="user__avatar-add" data-toggle="modal" href="#add-avatar">
+								
+<svg class="icon icon-photo-camera user__icon"><use xlink:href="img/sprite.svg#photo-camera"></use></svg>
+
+							</a> -->
+                  <button class="user__avatar-add js-add-avatar--open">
+                    <svg class="icon icon-photo-camera user__icon">
+                      <use xlink:href="img/sprite.svg#photo-camera"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- end user -->
+              <!-- begin name & surname -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label ">Имя Фамилия</div>
+                <div class="profile-editor__input ">
+                  <input type="text">
+                  <!-- <span class="profile-editor__error">*Какая-то ошибочка</span> -->
+                  <!-- begin tip -->
+                  <div class="bb-input-tip js-bb-input-tip">
+                    <span class="bb-input-tip__arrow-up"></span>
+                    <i class="fal fa-times"></i>
+                    <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
+                  </div>
+                  <!-- end tip -->
+                </div>
+              </div>
+              <!-- end name & surname -->
+              <!-- begin phone -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label ">Телефон</div>
+                <div class="profile-editor__input ">
+                  <input class="js-phone-mask" type="tel">
+                  <span class="profile-editor__error">*Какая-то ошибочка</span>
+                </div>
+              </div>
+              <!-- end phone -->
+              <!-- begin e-mail -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label ">E-mail</div>
+                <div class="profile-editor__input ">
+                  <input class="js-email-mask" type="email">
+                  <span class="profile-editor__error">*Какая-то ошибочка</span>
+                </div>
+              </div>
+              <!-- end e-mail -->
+              <!-- begin date of born -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label pt">Дата рождения</div>
+                <div class="profile-editor__input">
+                  <div class="profile-editor__select profile-editor__select--day">
+                    <select class="js-select no-search" data-placeholder="День">
+                      <option></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                    </select>
+                  </div>
+                  <div class="profile-editor__select profile-editor__select--month">
+                    <select class="js-select no-search" data-placeholder="Месяц">
+                      <option></option>
+                      <option value="Январь">Январь</option>
+                      <option value="Февраль">Февраль</option>
+                      <option value="Март">Март</option>
+                      <option value="Апрель">Апрель</option>
+                      <option value="Май">Май</option>
+                      <option value="Июнь">Июнь</option>
+                      <option value="Июль">Июль</option>
+                      <option value="Август">Август</option>
+                      <option value="Сентябрь">Сентябрь</option>
+                      <option value="Октябрь">Октябрь</option>
+                      <option value="Ноябрь">Ноябрь</option>
+                      <option value="Декабрь">Декабрь</option>
+                    </select>
+                  </div>
+                  <div class="profile-editor__select profile-editor__select--year">
+                    <select class="js-select no-search" data-placeholder="Год">
+                      <option></option>
+                      <option value="1988">1988</option>
+                      <option value="1989">1989</option>
+                      <option value="1990">1990</option>
+                      <option value="1991">1991</option>
+                      <option value="1992">1992</option>
+                      <option value="1993">1993</option>
+                      <option value="1194">1194</option>
+                      <option value="1995">1995</option>
+                      <option value="1996">1996</option>
+                      <option value="1997">1997</option>
+                      <option value="1998">1998</option>
+                      <option value="1999">1999</option>
+                      <option value="2000">2000</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                    </select>
+                  </div>
+                  <span class="profile-editor__error">*Какая-то ошибочка</span>
+                </div>
+              </div>
+              <!-- end date of born -->
+              <!-- begin gender -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label">Пол</div>
+                <div class="profile-editor__input">
+                  <label class="bb-checkbox bb-checkbox--radio">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">женский</span>
+                  </label>
+                  <label class="bb-checkbox bb-checkbox--radio">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">мужской</span>
+                  </label>
+                  <span class="profile-editor__error">*Какая-то ошибочка</span>
+                </div>
+              </div>
+              <!-- end gender -->
+              <!-- begin role -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label">Роль</div>
+                <div class="profile-editor__input">
+                  <select class="js-select no-search" data-placeholder="Не выбрана">
+                    <option></option>
+                    <option value="Администратор">Администратор</option>
+                    <option value="Мастер">Мастер</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end role -->
+              <!-- begin category -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label">Категория</div>
+                <div class="profile-editor__input">
+                  <select class="js-select--multiple" multiple="multiple">
+                    <option value="Aravia Professional">Aravia Professional</option>
+                    <option value="Gloria">Gloria</option>
+                    <option value="TNL Professional">TNL Professional</option>
+                    <option value="Orly">Orly</option>
+                    <option value="Opi">Opi</option>
+                    <option value="Сanni">Сanni</option>
+                    <option value="Gloria">Gloria</option>
+                    <option value="TNL Professional">TNL Professional</option>
+                    <option value="Orly">Orly</option>
+                    <option value="Opi">Opi</option>
+                    <option value="Сanni">Сanni</option>
+                    <option value="Gloria">Gloria</option>
+                    <option value="TNL Professional">TNL Professional</option>
+                    <option value="Orly">Orly</option>
+                    <option value="Opi">Opi</option>
+                    <option value="Сanni">Сanni</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end category -->
+              <!-- begin employment -->
+              <div class="profile-editor__item">
+                <div class="profile-editor__label"> Трудоустройство мастера
+                  <div class="info-block info-block--large bb-dropdown bb-dropdown--hover js-bb-dropdown">
+                    <div class="bb-dropdown__list info-block__dropdown">
+                      <p class="info-block__text">Мастер
+                        <strong>на % основе</strong> имеет ограниченный доступ к основным возможностям системы. </p>
+                      <div class="info-block__text"> Мастер
+                        <strong>на арендной</strong> основе имеет полный доступ к основным возможностям системы:
+                        <ul class="list list--dashed">
+                          <li class="list__item">создавать новую заявку;</li>
+                          <li class="list__item">редактировать график работы;</li>
+                          <li class="list__item">календарь;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-editor__input">
+                  <label class="bb-checkbox bb-checkbox--radio ">
+                    <input name="bb-checkbox--radio" type="radio">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">На % основе</span>
+                  </label>
+                  <label class="bb-checkbox bb-checkbox--radio ">
+                    <input name="bb-checkbox--radio" type="radio">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Аренда места</span>
+                  </label>
+                  <span class="profile-editor__error">*Какая-то ошибочка</span>
+                </div>
+              </div>
+              <!-- end employment -->
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default add__btn">Сохранить</button>
+            </div>
+            <!-- begin add-avatar -->
+            <div class="add-avatar js-add-avatar">
+              <div class="add-avatar__inner">
+                <h5 class="add-avatar__title">Фото сотрудника</h5>
+                <p class="add-avatar__text">Загрузите фотографию в формате JPG/JPEG, PNG или GIF.</p>
+                <label class="btn btn-outline-default add-avatar__btn"> Загрузить фото
+                  <input name="file" type="file"> </label>
+                <div class="add-avatar__image" style="display: none;">
+                  <div class="add-avatar__img">
+                    <img class="js-cropper" src="img/examples/user/avatar-crop.jpg" alt="crop-avatar"> </div>
+                </div>
+              </div>
+              <div class="modal-footer add-avatar__footer">
+                <button class="btn btn-link js-add-avatar--close">Отмена</button>
+                <button class="btn btn-default">Продолжить</button>
+              </div>
+            </div>
+            <!-- end add-avatar -->
+          </div>
+        </div>
+      </div>
+      <!-- end add-master -->
+      <!-- begin add-->
+      <div class="modal fade add-avatar" id="add-avatar">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title">Загрузка новой фотографии</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <div class="add-avatar__choice">
+                <p class="add-avatar__text">Загрузите фотографию в формате JPG/JPEG, или PNG.</p>
+                <label class="btn btn-default btn--small add-avatar__btn"> Выбрать файл
+                  <input name="file" type="file"> </label>
+              </div>
+              <div class="add-avatar__inner">
+                <div class="add-avatar__img">
+                  <img class="js-cropper" src="img/examples/user/avatar-crop.jpg" alt="crop-avatar"> </div>
+              </div>
+            </div>
+            <div class="modal-footer add-avatar__footer">
+              <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Отмена</button>
+              <button class="btn btn-default">Сохранить изменения</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end add-->
+      <!-- begin shedule-picker -->
+      <div class="modal fade studio-control shedule-picker" id="shedule-picker">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title modal-title--center">Расписание</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-box">
+                <div class="user user--small">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/user/cara-avatar.jpg" alt="Лиза Демитрова"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Ольга Оченьдлиннаяфамилия</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-box modal-box--title">
+                <div class="bb-input bb-input--select select-color">
+                  <select class="js-select--color" data-placeholder="Выберите салон">
+                    <option></option>
+                    <option value="Все салоны">Все салоны</option>
+                    <option data-color="#ab00b6" value="Студия красоты 'Березка' ТЦ Проспект">Студия красоты "Березка" ТЦ Проспект</option>
+                    <option data-color="#0096fb" value="Студия красоты 'Березка' ТЦ Оранж">Студия красоты "Березка" ТЦ Оранж</option>
+                  </select>
+                  <!-- begin tip -->
+                  <div class="bb-input-tip js-bb-input-tip no-close">
+                    <span class="bb-input-tip__arrow-up"></span>
+                    <i class="fal fa-times"></i>
+                    <div class="bb-input-tip__text">Выберите салон</div>
+                  </div>
+                  <!-- begin tip -->
+                </div>
+              </div>
+              <div class="modal-box modal-box--title">
+                <div class="bb-input bb-input--title bb-input--select">
+                  <span class="bb-input__title modal-box__title">Назначьте</span>
+                  <select class="js-select-native" data-placeholder="Выберите мастера">
+                    <option class="Рабочий день">Рабочий день</option>
+                    <option class="Выходной">Выходной</option>
+                    <option class="Отпуск">Отпуск</option>
+                  </select>
+                  <span class="bb-input__error">*Введите время</span>
+                </div>
+              </div>
+              <div class="modal-box modal-box--title">
+                <span class="modal-box__title">Выберите время</span>
+                <div class="working-hours__time">
+                  <div class="working-hours__time-item profile-editor__select">
+                    <select class="js-select-native">
+                      <option value="20 мин">20 мин</option>
+                      <option value="30 мин">30 мин</option>
+                      <option value="40 мин">40 мин</option>
+                      <option value="50 мин">50 мин</option>
+                      <option value="1 час">1 час</option>
+                      <option value="1 час 10 мин">1 час 10 мин</option>
+                      <option value="1 час 20 мин">1 час 20 мин</option>
+                      <option value="1 час 30 мин">1 час 30 мин</option>
+                      <option value="1 час 40 мин">1 час 40 мин</option>
+                      <option value="1 час 50 мин">1 час 50 мин</option>
+                      <option value="11 час 10 мин">11 час 10 мин</option>
+                      <option value="11 час 20 мин">11 час 20 мин</option>
+                      <option value="11 час 30 мин">11 час 30 мин</option>
+                      <option value="11 час 40 мин">11 час 40 мин</option>
+                      <option value="11 час 50 мин">11 час 50 мин</option>
+                    </select>
+                  </div>
+                  <span class="working-hours__devider"> — </span>
+                  <div class="working-hours__time-item profile-editor__select">
+                    <select class="js-select-native">
+                      <option value="20 мин">20 мин</option>
+                      <option value="30 мин">30 мин</option>
+                      <option value="40 мин">40 мин</option>
+                      <option value="50 мин">50 мин</option>
+                      <option value="1 час">1 час</option>
+                      <option value="1 час 10 мин">1 час 10 мин</option>
+                      <option value="1 час 20 мин">1 час 20 мин</option>
+                      <option value="1 час 30 мин">1 час 30 мин</option>
+                      <option value="1 час 40 мин">1 час 40 мин</option>
+                      <option value="1 час 50 мин">1 час 50 мин</option>
+                      <option value="11 час 10 мин">11 час 10 мин</option>
+                      <option value="11 час 20 мин">11 час 20 мин</option>
+                      <option value="11 час 30 мин">11 час 30 мин</option>
+                      <option value="11 час 40 мин">11 час 40 мин</option>
+                      <option value="11 час 50 мин">11 час 50 мин</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-box modal-box--title">
+                <span class="modal-box__title">Выберите время</span>
+                <input type="text" class="js-date-inline" style="display: none;">
+                <div class="list list--inline list--dot align-center mt-10">
+                  <li class="list__item">
+                    <i class="list__dot" style="background-color: #d0e4fa;"></i>
+                    <span class="list__text">Рабочие дни</span>
+                  </li>
+                  <li class="list__item">
+                    <i class="list__dot" style="background-color: #ff8272;"></i>
+                    <span class="list__text">Новые даты</span>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default btn--big">Сохранить</button>
+              <button class="btn btn-link  is-hidden" data-dismiss="modal" aria-label="Close">Удалить</button>
+              <button class="btn btn-default  is-hidden">Сохранить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end shedule-picker -->
+      <!-- begin shedule-picker -->
+      <div class="modal fade studio-control shedule-picker shedule-picker--master" id="shedule-picker-master">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <div class="modal-header modal-header--transparent">
+              <h5 class="modal-title modal-title--center">Расписание</h5>
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-box">
+                <div class="user user--small">
+                  <div class="user__inner">
+                    <div class="user__img">
+                      <img src="img/examples/studio/logo.jpeg" alt="Студия 'Березка'"> </div>
+                    <div class="user__text">
+                      <span class="user__name">Студия "Березка" ТЦ Проспект</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-box modal-box--title modal-box--choice">
+                <div class="modal-box__inner">
+                  <div class="modal-box__title">
+                    <span>Выберите мастер (а/ов)</span>
+                    <div class="bb-input js-input-box'">
+                      <input class="search__input js-input" type="text" placeholder="Имя или фамилия" autocomplete="off">
+                      <i class="fal fa-search bb-input__icon"></i>
+                      <i class="fal fa-times bb-input__icon js-input--clear" style="display: none;"></i>
+                    </div>
+                  </div>
+                  <label class="bb-checkbox js-bb-checkbox js-bb-checkbox-select-all">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Выбрать всех</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Лиза Демитрова</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Ангелина Левинникова</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Наташа Шилова</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Ольга Оченьдлиннаяфамилия</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Карина Мелина</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Саша Абдулина</span>
+                  </label>
+                  <label class="bb-checkbox js-bb-checkbox">
+                    <input type="checkbox">
+                    <span class="bb-checkbox__box"></span>
+                    <span class="bb-checkbox__title">Дядя Вася</span>
+                  </label>
+                </div>
+                <div class="validate-message validate-message--error modal-box__validate">Выберите хотябы одного мастера.</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-link" data-dismiss="modal" aria-label="Close">Отменить</button>
+              <button class="btn btn-default">Сохранить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end shedule-picker -->
+    </div>
+    <!-- end popups -->
+    <!-- begin preloader -->
+    <div class="preloader">
+      <svg class="preloader__icon" x="0px" y="0px" viewBox="0 0 1000 1000">
+        <path style="fill:none;stroke:#C7C7C7;stroke-width:70;stroke-miterlimit:10;" d="M810.6,962.4H189.1
+			c-83.4,0-151.7-68.2-151.7-151.7V189.3c0-83.4,68.2-151.7,151.7-151.7h621.5c83.4,0,151.7,68.2,151.7,151.7v621.5
+			C962.2,894.2,894,962.4,810.6,962.4z" />
+        <g>
+          <path style="fill:#C7C7C7;" d="M384.6,829.1c-27.6-3.8-53.3-9.6-77.1-17.5V191l112.5,0v249.5c0,0,27.1-27.9,47.4-36.6
+				c20.3-8.7,43-13,68-13c32.3,0,61.3,7.5,87.1,22.6c25.7,15.1,46.2,38.5,61.3,70.2c15.1,31.7,22.7,71.5,22.7,119.2
+				c0,37-4.7,69.7-14.2,97.9c-54.7-26.3-127.2,34.3-85.3,104c-36.5,19.9-82.9,29.8-139.1,29.8C440,834.8,412.2,832.9,384.6,829.1z
+				M560.9,708.3c17-20.4,25.5-52.6,25.5-96.7c0-42.9-7.4-73.6-22.1-92c-14.7-18.4-35.5-27.6-62.3-27.6c-14,0-27.4,2.7-40,8.1
+				c-12.7,5.4-23.7,13.6-32.9,24.4v206.6c16.1,5.2,34.2,7.8,54.4,7.8C518,738.9,543.8,728.7,560.9,708.3z" /> </g>
+        <circle style="fill:#C7C7C7;" cx="664.4" cy="765" r="53.1" /> </svg>
+    </div>
+    <!-- end preloader -->
+    <div class="overlay js-overlay"></div>
+    <!-- begin scripts -->
+    <script type="text/javascript" src="js/cabinet.libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/cabinet.js"></script>
+    <script type="text/javascript" src="js/del.js"></script>
+    <!-- end scripts -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.937 110.269">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#707070}.cls-2{fill:#707070}.cls-3{fill:#b8b9bc}.cls-4{fill:#e18577}
+        </style>
+    </defs>
+    <g id="building_2_" data-name="building (2)" transform="translate(-44.792 .5)">
+        <path id="Path_6636" data-name="Path 6636" class="cls-1" d="M127.015 0v22.694h48.961v12.818h18.071V0z" transform="translate(-64.282)"/>
+        <path id="Rectangle_8100" data-name="Rectangle 8100" class="cls-2" transform="translate(71.718 9.698)" d="M0 0h17.021v13.028H0z"/>
+        <path id="Rectangle_8101" data-name="Rectangle 8101" class="cls-1" transform="translate(45.292 22.694)" d="M0 0h66.402v86.575H0z"/>
+        <path id="Rectangle_8102" data-name="Rectangle 8102" class="cls-1" transform="translate(111.694 35.512)" d="M0 0h23.535v73.756H0z"/>
+        <path id="Rectangle_8103" data-name="Rectangle 8103" class="cls-3" transform="translate(68.911 92.454)" d="M0 0h19.122v16.811H0z"/>
+        <g id="Group_1781" data-name="Group 1781" transform="translate(57.515 33.507)">
+            <path id="Rectangle_8104" data-name="Rectangle 8104" class="cls-4" transform="translate(.193 .071)" d="M0 0h14.079v10.086H0z"/>
+            <path id="Rectangle_8105" data-name="Rectangle 8105" class="cls-4" transform="translate(28.002)" d="M0 0h14.079v10.086H0z"/>
+            <path id="Rectangle_8106" data-name="Rectangle 8106" class="cls-4" transform="translate(0 18.996)" d="M0 0h14.079v10.086H0z"/>
+            <path id="Rectangle_8107" data-name="Rectangle 8107" class="cls-4" transform="translate(27.809 18.931)" d="M0 0h14.079v10.086H0z"/>
+            <path id="Rectangle_8108" data-name="Rectangle 8108" class="cls-4" transform="translate(.017 37.929)" d="M0 0h14.079v10.086H0z"/>
+            <path id="Rectangle_8109" data-name="Rectangle 8109" class="cls-4" transform="translate(27.826 37.86)" d="M0 0h14.079v10.086H0z"/>
+        </g>
+        <path id="Path_6637" data-name="Path 6637" class="cls-2" d="M319.015 45.292V58.32H327v5.253h9.036V45.292z" transform="translate(-215.306 -35.626)"/>
+        <g id="Group_1782" data-name="Group 1782" transform="translate(111.7 45.347)">
+            <path id="Rectangle_8110" data-name="Rectangle 8110" class="cls-3" d="M0 0h13.659v16.39H0z"/>
+            <path id="Rectangle_8111" data-name="Rectangle 8111" class="cls-3" transform="translate(.015 33.226)" d="M0 0h13.659v16.39H0z"/>
+        </g>
+    </g>
+</svg>
