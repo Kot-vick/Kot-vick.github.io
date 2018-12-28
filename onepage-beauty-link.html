@@ -384,7 +384,7 @@
                   <div class="container">
                     <div class="firstscreen__inner">
                       <div class="firstscreen__wrapper">
-                        <h1 class="firstscreen__title">beauty-link</h1>
+                        <h1 class="firstscreen__title">beauty link</h1>
                         <p class="firstscreen__subtitle">Получи личный сайт beauty-мастера за 5 минут</p>
                         <a class="firstscreen__btn btn btn-white sm-only js-goto" href="#screen--reg">Подробнее</a>
                         <button class="firstscreen__btn btn-white sm-hide" data-toggle="modal" data-target="#regForm">Подробнее</button>
@@ -428,8 +428,15 @@
           <!-- end firstscreen -->
           <!-- begin mockup -->
           <div class="screen screen--mockup">
-            <div class="screen__mockup">
-              <img src="img/general/mockups/mockup-mobile.png" alt="alt"> </div>
+            <div class="video-mockup js-mockup-video">
+              <img class="video-mockup__mockup" src="img/general/mockups/mockup-mobile.png" alt="alt">
+              <div class="video-mockup__video">
+                <video src="img/video/beautylink-demo.mp4" loop="loop"></video>
+                <button class="video-mockup__play-btn">
+                  <i class="fas fa-triangle"></i>
+                </button>
+              </div>
+            </div>
           </div>
           <!-- end mockup -->
           <!-- begin adv -->
@@ -441,7 +448,7 @@
                   <div class="icon-list__icon icon-list__icon--all-messengers">
                     <img src="img/icons/svg/all-messengers.svg" alt=""> </div>
                   <div class="icon-list__desc">
-                    <div class="icon-list__title">Все мессенджеры в одной ссылке</div>
+                    <div class="icon-list__title js-equalheights">Все мессенджеры в одной ссылке</div>
                     <div class="icon-list__sub">Клиенты сами выбирают, как с вами связаться: через WhatsApp, Viber или Вконтакте</div>
                   </div>
                 </li>
@@ -449,7 +456,7 @@
                   <div class="icon-list__icon icon-list__icon--online-reg">
                     <img src="img/icons/svg/online-reg.svg" alt=""> </div>
                   <div class="icon-list__desc">
-                    <div class="icon-list__title">Онлайн-запись</div>
+                    <div class="icon-list__title js-equalheights">Онлайн-запись</div>
                     <div class="icon-list__sub">Принимайте заявки 24/7. Все, что нужно знать о ваших услугах уже на Beauty link</div>
                   </div>
                 </li>
@@ -457,7 +464,7 @@
                   <div class="icon-list__icon ">
                     <img src="img/icons/svg/info(2).svg" alt=""> </div>
                   <div class="icon-list__desc">
-                    <div class="icon-list__title">Вся информация о мастере или салоне</div>
+                    <div class="icon-list__title js-equalheights">Вся информация о мастере или салоне</div>
                     <div class="icon-list__sub">Услуги, цены, время работы мастера и отзывы клиентов</div>
                   </div>
                 </li>
@@ -548,7 +555,7 @@
           <div class="screen screen--reg bg--grey sm-only">
             <div class="container">
               <!-- begin auth__form -->
-              <div class="form" id="screen--reg">
+              <div class="form js-modal-form" id="screen--reg">
                 <div class="form__header">
                   <div class="form__title"> Упрости работу своего салона </div>
                 </div>
@@ -643,94 +650,12 @@
               <!-- end auth__form -->
             </div>
           </div>
-          <!-- begin modal-dialog master-picker -->
+          <!-- begin modal-dialog reg form -->
           <div class="modal fade" id="regForm" role="dialog">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog--sm">
               <div class="modal-content">
                 <div class="modal-body no-padding">
-                  <!-- begin auth__form -->
-                  <div class="form" id="screen--reg">
-                    <div class="form__header">
-                      <div class="form__title">Упрости работу своего салона </div>
-                    </div>
-                    <div class="form__inner">
-                      <form class="auth-form">
-                        <div class="bb-input ">
-                          <input class="bb-input__input  js-phone-mask" type="tel" placeholder="Ваш телефон">
-                          <i class="fas fa-mobile-android-alt bb-input__icon"></i>
-                          <!-- begin tip -->
-                          <div class="bb-input-tip js-bb-input-tip">
-                            <span class="bb-input-tip__arrow-up"></span>
-                            <i class="fal fa-times"></i>
-                            <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
-                          </div>
-                          <!-- end tip -->
-                        </div>
-                        <div class="bb-input ">
-                          <input class="bb-input__input  " type="password" placeholder="Придумайте пароль">
-                          <i class="bb-input__icon fal fa-eye-slash js-bb-input-password--show"></i>
-                          <i class="bb-input__icon fal fa-eye js-bb-input-password--hide" style="display: none;"></i>
-                          <!-- begin tip -->
-                          <div class="bb-input-tip js-bb-input-tip">
-                            <span class="bb-input-tip__arrow-up"></span>
-                            <i class="fal fa-times"></i>
-                            <p class="bb-input-tip__text">*Какая-то ошибочка вышла</p>
-                          </div>
-                          <!-- end tip -->
-                        </div>
-                        <div class="form__box">
-                          <label class="bb-checkbox auth-form__rememberme">
-                            <input type="checkbox">
-                            <span class="bb-checkbox__box"></span>
-                            <span class="bb-checkbox__title">Запомнить меня</span>
-                          </label>
-                          <a class="form__link form__link--recover" href="recover-password.html">Забыли пароль?</a>
-                        </div>
-                        <div class="form__buttons">
-                          <button class="btn btn-default form__btn">Начать пользоваться</button>
-                        </div>
-                        <div class="bb-title bb-title--devider form__devider">или</div>
-                        <div class="form__social">
-                          <a href="#" class="btn btn-social btn-social--vk">
-                            <span>Войти через VKontakte</span>
-                          </a>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="form-success">
-                      <div class="form-success__inner">
-                        <div class="form-success__header">
-                          <h3 class="form-success__title">Спасибо что присоединились к
-                            <span class="color-primary">beautybox</span>.</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-success form-success--confirm">
-                      <div class="form-confirm__inner">
-                        <div class="form-success__header">
-                          <h3 class="form-success__title">Спасибо за регистрацию!</h3>
-                        </div>
-                        <div class="phone-confirm__text">
-                          <div class="phone-confirm__send">На Ваш номер было отправлено SMS
-                            <br> с кодом подтверждения.</div>
-                        </div>
-                        <div class="phone-confirm__buttons">
-                          <div class="phone-confirm__box">
-                            <div class="bb-input bb-input--confirm">
-                              <input class="bb-input__input phone-confirm__input" type="num" placeholder="Sms код">
-                              <span class="bb-input__error">*Какая-то ошибочка вышла</span>
-                            </div>
-                            <button class="button-animate button-animate js-btn-animate phone-confirm__btn"> Ок
-                              <span class="button-animate__hover"></span>
-                            </button>
-                          </div>
-                          <span class="button-link" data-fancybox-close>подтвердить позже</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end auth__form -->
-                  <button class="modal-close" data-dismiss="modal">
+                  <button class="modal-body__close" data-dismiss="modal">
                     <i class="fal fa-times"></i>
                   </button>
                 </div>
